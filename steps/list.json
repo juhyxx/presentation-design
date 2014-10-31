@@ -1,0 +1,105 @@
+[{
+	"uri": "start.html",
+	"id": "title",
+	"class": "step title",
+	"data": {
+		"x": 0,
+		"y": 0,
+		"z": 0,
+		"scale": 4,
+		"rotate-x": 0,
+		"rotate-y": 0,
+		"rotate-z": 0
+	}
+}, {
+	"uri": "colors.html",
+	"id": "colors",
+	"class": "step",
+	"data": {
+		"x": 2000,
+		"y": 0,
+		"z": 0,
+		"scale": 1,
+		"rotate-x": 0,
+		"rotate-y": 45,
+		"rotate-z": 90
+	}
+}, {
+	"uri": "colors-color-spaces.html",
+	"id": "colors-color-spaces",
+	"class": "step",
+	"data": {
+		"x": 3000,
+		"y": 0,
+		"z": 0,
+		"scale": 1,
+		"rotate-x": 0,
+		"rotate-y": 0,
+		"rotate-z": 90
+	}
+}, {
+	"uri": "colors-rgb.html",
+	"id": "colors-rgb",
+	"class": "step",
+	"data": {
+		"x": 4000,
+		"y": 0,
+		"z": 0,
+		"scale": 1,
+		"rotate-x": 0,
+		"rotate-y": 0,
+		"rotate-z": 90
+	}
+}, {
+    "uri": "colors-cmyk.html",
+    "id": "colors-cmyk",
+    "class": "step",
+    "data": {
+        "x": 5000,
+        "y": 0,
+        "z": 0,
+        "scale": 1,
+        "rotate-x": 0,
+        "rotate-y": 0,
+        "rotate-z": 90
+    }
+}, {
+	"uri": "symbols.html",
+	"id": "symbols",
+	"class": "step",
+	"data": {
+		"x": 6000,
+		"y": 0,
+		"z": 0,
+		"scale": 1,
+		"rotate-x": 0,
+		"rotate-y": 0,
+		"rotate-z": 90
+	}
+}, {
+	"uri": "fonts.html",
+	"id": "fonts",
+	"class": "step",
+	"data": {
+		"x": 6000,
+		"y": 0,
+		"z": 0,
+		"scale": 1,
+		"rotate-x": 0,
+		"rotate-y": 0,
+		"rotate-z": 90
+	}
+}, {
+	"uri": "overview.html",
+	"id": "overview",
+	"class": "step",
+	"data": {
+		"x": 0,
+		"y": 0,
+		"z": 0,
+		"scale": 10,
+		"rotate-x": -45,
+		"rotate-y": -45,
+		"rotate-z": 0
+	}
+}]

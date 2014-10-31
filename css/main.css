@@ -1,0 +1,39 @@
+/**
+ * Every step element has one of three classes: `future`, `present` and `past`.
+ * Only one current step has the `present` class.
+ * When a step is shown (selected) its element gets the class of "active" and 
+ * the body element gets the class `impress-on-ID` where ID is the step's id.
+ */
+
+ @import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+.notes {
+    display:none;
+}
+body {
+	background: white;
+}
+.step h1{
+	text-shadow: 1px 1px 8px black;
+	color: #B32435;
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+
+.step h2 {
+    font-size: 78px;
+    font-weight: bold;
+}
+
+.step  {
+	color: #14427E;
+	font-family: Montserrat !important;
+}
+.color-box div {
+	height: 100px;
+	width: 100px;
+	margin: 10px;
+	display: inline-block;
+	border-radius: 3px;
+	box-shadow: 0 0 2px gray, 0 0 8px gray;
+}
