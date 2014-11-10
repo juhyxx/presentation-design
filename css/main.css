@@ -11,7 +11,7 @@
     display:none;
 }
 body {
-	background: white;
+	background: #EFEFEF;
 }
 .step h1{
 	text-shadow: 1px 1px 8px black;
@@ -30,10 +30,9 @@ body {
 	font-family: Montserrat !important;
 }
 .color-box div {
-	height: 100px;
-	width: 100px;
-	margin: 10px;
+	height: 140px;
+	width: 140px;
 	display: inline-block;
 	border-radius: 3px;
-	box-shadow: 0 0 2px gray, 0 0 8px gray;
+	border:5px solid white;
 }
