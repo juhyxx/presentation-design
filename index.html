@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1024" />
@@ -11,41 +12,124 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
 
     <link href="bower_components/impress.js/css/impress-demo.css" rel="stylesheet" />
-    <link href="css/impressConsole.css" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet" />
 
 
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <style>
+    .step:not(.active) {
+opacity: 0;
+}</style>
 </head>
 
 <body>
 
-<div id="impress" class="steps">
-</div>
+    <div id="impress">
+    <section class="step">
+      <h1>Colors</h1>
+
+    </section>
+        <section class="step">
+            <h2>Color spaces</h2>
+
+            <ul>
+                <li>CMYK</li>
+                <li>HSB</li>
+                <li>Lab</li>
+            </ul>
+        </section>
+        <section class="step">
+            <h2>Colors - CMYK</h2>
+
+            <div class="color-box">
+                <div style="background-color: #00aeef"></div>
+                <div style="background-color: #ec008c"></div>
+                <div style="background-color: #fff200"></div>
+                <div style="background-color: #231f20"></div>
+            </div>
+
+        </section>
+
+        <section class="step">
+            <div>
+                <h2>Colors - HSB</h2>
+                <img src="hsb.svg">
+            </div>
+        </section>
+
+        <section class="step">
+            <h2>Colors - RGB</h2>
+
+            <div class="color-box">
+                <div style="background-color: #FF0000"></div>
+                <div style="background-color: #00FF00"></div>
+                <div style="background-color: #0000FF"></div>
+            </div>
+
+        </section>
+
+        <section class="step">
+          <h2>Composition</h2>
+
+Zlatý řez
+Typický layout web applikace
+Směr čtení
+        </section>
+
+        <section class="step">
+          <h1>Fonts</h1>
+
+účel
+- čtení dlouhých textů
+  - serif
+
+- výrazný, krátký text (plakát)
+ - bezserifové
+ - ozdobné
+
+ - fonty pro UI
+    - jednoznacně rozeznatelné znaky - il
+    - malou šířku znaku
+    - high contrast
+
+    - Chicago
+    - Lucida Grande
+    - Ubuntu
+    - Tahoma
+    - Segoe UI
 
 
-  <script src="bower_components/jquery/jquery.js"></script>
-  <script src="bower_components/handlebars/handlebars.js"></script>
-  <script src="bower_components/impress.js/js/impress.js"></script>
-  <script src="js/impressConsole.js"></script>
-  <script src="js/main.js"></script>
 
-  <script id="step-template" type="x-handlebars-template">
-    <div id="{{id}}" class="{{class}}"{{#step data}}{{uri}}{{/step}}>{{{file}}}</div>
-  </script> 
+        </section>
+<section class="step">
+  
+</section>
 
-  <script>
-  // First, get sorted slide list
 
-  $.getJSON('steps/list.json', function(data) {
-    // Append ordered slides
-    appendSlides(data);
+    </div>
+
+
+
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/impress.js/js/impress.js"></script>
+
+
+
+
+    <script>
+    // First, get sorted slide list
     impress().init();
-    impressConsole().init();
-  });
-  </script>
+
+    /* $.getJSON('steps/list.json', function(data) {
+       // Append ordered slides
+       appendSlides(data);
+       impress().init();
+       impressConsole().init();
+     });*/
+    </script>
 
 
 </body>
+
 </html>
