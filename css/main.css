@@ -5,34 +5,53 @@
  * the body element gets the class `impress-on-ID` where ID is the step's id.
  */
 
- @import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+body {
+    background-color: #FFE0AE !important;
+}
 
 .notes {
-    display:none;
-}
-body {
-	background: #EFEFEF;
-}
-.step h1{
-	text-shadow: 1px 1px 8px black;
-	color: #B32435;
-	text-transform: uppercase;
-	margin-bottom: 0;
+    display: none;
 }
 
-.step h2 {
-    font-size: 78px;
+body {
+    background: #EFEFEF;
+}
+
+.step h1 {
+    font-size: 100px;
+    color: #8D071F;
+    margin-bottom: 0;
     font-weight: bold;
 }
 
-.step  {
-	color: #14427E;
-	font-family: Montserrat !important;
+.step h2 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #3C8E7A;
 }
+
+.step {
+    color: #197961;
+    font-family: Montserrat !important;
+}
+
 .color-box div {
-	height: 140px;
-	width: 140px;
-	display: inline-block;
-	border-radius: 3px;
-	border:5px solid white;
+    height: 140px;
+    width: 140px;
+    display: inline-block;
+    border-radius: 3px;
+    border: 5px solid white;
+}
+
+.step:not(.active) {
+   /* opacity: 0;*/
+}
+
+section {
+	display: block;
+	margin: 2em;
+	border:1px solid black;
+	padding: 1em;
 }
