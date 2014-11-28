@@ -46,12 +46,11 @@ body {
 }
 
 .step:not(.active) {
-   /* opacity: 0;*/
-}
+    opacity: 0}
 
-section {
+/*section {
 	display: block;
 	margin: 2em;
 	border:1px solid black;
 	padding: 1em;
-}
+}*/
