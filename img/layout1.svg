@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="161px" height="158px" viewBox="100 72.445 161 158" enable-background="new 100 72.445 161 158" xml:space="preserve">
+<rect x="100" y="100" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" width="100" height="100"/>
+<rect x="200" y="100" fill="#B2B2B2" stroke="#000000" stroke-miterlimit="10" width="61" height="100"/>
+<text transform="matrix(1 0 0 1 162.9998 86.2495)" fill="#797979" font-family="'MyriadPro-Regular'" font-size="12">960px</text>
+<g>
+	<g>
+		<line fill="none" stroke="#797979" stroke-miterlimit="10" x1="108.859" y1="91" x2="252.141" y2="91"/>
+		<g>
+			<polygon fill="#797979" points="110.841,93.783 100,90.88 110.841,87.973 			"/>
+		</g>
+		<g>
+			<polygon fill="#797979" points="250.159,93.783 261,90.88 250.159,87.973 			"/>
+		</g>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 135.9167 223.0835)" fill="#797979" font-family="'MyriadPro-Regular'" font-size="12">593px</text>
+<text transform="matrix(1 0 0 1 215.2502 225.0835)" fill="#797979" font-family="'MyriadPro-Regular'" font-size="12">367px</text>
+<g>
+	<g>
+		<line fill="none" stroke="#797979" stroke-miterlimit="10" x1="108.859" y1="211.25" x2="191.141" y2="211.25"/>
+		<g>
+			<polygon fill="#797979" points="110.841,214.033 100,211.13 110.841,208.223 			"/>
+		</g>
+		<g>
+			<polygon fill="#797979" points="189.159,214.033 200,211.13 189.159,208.223 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<line fill="none" stroke="#797979" stroke-miterlimit="10" x1="208.859" y1="211.25" x2="252.308" y2="211.25"/>
+		<g>
+			<polygon fill="#797979" points="210.841,214.033 200,211.13 210.841,208.223 			"/>
+		</g>
+		<g>
+			<polygon fill="#797979" points="250.326,214.033 261.167,211.13 250.326,208.223 			"/>
+		</g>
+	</g>
+</g>
+</svg>
