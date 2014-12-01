@@ -2,48 +2,52 @@
 <!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1"
-	 id="svg2" sodipodi:docname="FibonacciBlocks.svg" inkscape:version="0.44.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://web.resource.org/cc/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" sodipodi:version="0.32" sodipodi:docbase="D:\My Documents\Wikipedia Stuff"
+	 id="svg2" sodipodi:docname="FibonacciBlocks.svg" inkscape:version="0.44.1" sodipodi:docbase="D:\My Documents\Wikipedia Stuff" sodipodi:version="0.32" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://web.resource.org/cc/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="585.5px"
-	 height="360.308px" viewBox="-257 -50.383 585.5 360.308" enable-background="new -257 -50.383 585.5 360.308"
-	 xml:space="preserve">
-<sodipodi:namedview  width="270px" height="170px" id="base" showgrid="true" inkscape:cy="87.739131" inkscape:cx="145.49068" inkscape:zoom="4" borderopacity="1.0" bordercolor="#666666" pagecolor="#ffffff" inkscape:window-y="0" inkscape:window-x="-2" inkscape:window-height="981" inkscape:window-width="1276" inkscape:current-layer="layer3" inkscape:document-units="px" inkscape:pageshadow="2" inkscape:pageopacity="0.0" inkscape:grid-points="true" guidetolerance="10" objecttolerance="10" gridtolerance="10000" gridoriginy="1000px" gridempspacing="4" gridspacingx="5px" gridspacingy="5px">
+	 height="360.309px" viewBox="0 0 585.5 360.309" enable-background="new 0 0 585.5 360.309" xml:space="preserve">
+<sodipodi:namedview  width="270px" height="170px" id="base" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:current-layer="layer3" inkscape:window-width="1276" inkscape:window-height="981" inkscape:window-x="-2" inkscape:window-y="0" showgrid="true" gridspacingy="5px" gridempspacing="4" gridspacingx="5px" pagecolor="#ffffff" gridoriginy="1000px" bordercolor="#666666" objecttolerance="10" guidetolerance="10" borderopacity="1.0" inkscape:zoom="4" inkscape:cx="145.49068" inkscape:cy="87.739131" gridtolerance="10000" inkscape:grid-points="true" inkscape:document-units="px">
 	</sodipodi:namedview>
 <g id="layer2" inkscape:label="Red lines" inkscape:groupmode="layer">
-	<path id="path4556" fill="none" stroke="#FE0000" stroke-width="0.6" d="M-257-5.344h585.5"/>
-	<path id="path6330" sodipodi:nodetypes="cc" fill="none" stroke="#FE0000" stroke-width="0.6" d="M-257,39.694h585.5"/>
-	<path id="path8104" sodipodi:nodetypes="cc" fill="none" stroke="#FE0000" stroke-width="0.6" d="M-257,84.732h585.5"/>
-	<path id="path8106" sodipodi:nodetypes="cc" fill="none" stroke="#FE0000" stroke-width="0.6" d="M-257,129.771h585.5"/>
-	<path id="path8108" sodipodi:nodetypes="cc" fill="none" stroke="#FE0000" stroke-width="0.6" d="M-257,174.81h585.5"/>
-	<path id="path8110" sodipodi:nodetypes="cc" fill="none" stroke="#FE0000" stroke-width="0.6" d="M-257,219.848h585.5"/>
-	<path id="path8112" sodipodi:nodetypes="cc" fill="none" stroke="#FE0000" stroke-width="0.6" d="M-257,264.887h585.5"/>
-	<path id="path8114" sodipodi:nodetypes="cc" fill="none" stroke="#FE0000" stroke-width="0.6" d="M-211.961-50.383v360.308"/>
-	<path id="path8118" sodipodi:nodetypes="cc" fill="none" stroke="#FE0000" stroke-width="0.6" d="M-166.923-50.383v360.308"/>
-	<path id="path8120" sodipodi:nodetypes="cc" fill="none" stroke="#FE0000" stroke-width="0.6" d="M-121.885-50.383v360.308"/>
-	<path id="path8122" sodipodi:nodetypes="cc" fill="none" stroke="#FE0000" stroke-width="0.6" d="M-76.846-50.383v360.308"/>
-	<path id="path8124" sodipodi:nodetypes="cc" fill="none" stroke="#FE0000" stroke-width="0.6" d="M-31.808-50.383v360.308"/>
-	<path id="path8126" sodipodi:nodetypes="cc" fill="none" stroke="#FE0000" stroke-width="0.6" d="M13.23-50.383v360.308"/>
-	<path id="path8128" sodipodi:nodetypes="cc" fill="none" stroke="#FE0000" stroke-width="0.6" d="M58.27-50.383v360.308"/>
-	<path id="path8130" sodipodi:nodetypes="cc" fill="none" stroke="#FE0000" stroke-width="0.6" d="M103.308-50.383v360.308"/>
-	<path id="path8132" sodipodi:nodetypes="cc" fill="none" stroke="#FE0000" stroke-width="0.6" d="M148.346-50.383v360.308"/>
-	<path id="path8134" sodipodi:nodetypes="cc" fill="none" stroke="#FE0000" stroke-width="0.6" d="M193.385-50.383v360.308"/>
-	<path id="path8136" sodipodi:nodetypes="cc" fill="none" stroke="#FE0000" stroke-width="0.6" d="M238.423-50.383v360.308"/>
-	<path id="path8138" sodipodi:nodetypes="cc" fill="none" stroke="#FE0000" stroke-width="0.6" d="M283.462-50.383v360.308"/>
-	<path id="rect1872" sodipodi:nodetypes="ccccc" fill="#FFFFFF" fill-opacity="0.6447" stroke="#000000" stroke-width="1.6" d="
-		M-257-50.383h585.5v360.308H-257V-50.383z"/>
+	<path id="rect1872" sodipodi:nodetypes="ccccc" fill="none" stroke="#FFFFFF" stroke-width="1.6" d="M0,0h585.5v360.308H0V0z"/>
+	<path id="path4556" fill="#FFFFFF" stroke="#1D1D1B" stroke-width="0.6" d="M0,45.039h585.5"/>
+	<path id="path6330" sodipodi:nodetypes="cc" fill="#FFFFFF" stroke="#1D1D1B" stroke-width="0.6" d="M0,90.077h585.5"/>
+	<path id="path8104" sodipodi:nodetypes="cc" fill="#FFFFFF" stroke="#1D1D1B" stroke-width="0.6" d="M0,135.115h585.5"/>
+	<path id="path8106" sodipodi:nodetypes="cc" fill="#FFFFFF" stroke="#1D1D1B" stroke-width="0.6" d="M0,180.154h585.5"/>
+	<path id="path8108" sodipodi:nodetypes="cc" fill="#FFFFFF" stroke="#1D1D1B" stroke-width="0.6" d="M0,225.193h585.5"/>
+	<path id="path8110" sodipodi:nodetypes="cc" fill="#FFFFFF" stroke="#1D1D1B" stroke-width="0.6" d="M0,270.231h585.5"/>
+	<path id="path8112" sodipodi:nodetypes="cc" fill="#FFFFFF" stroke="#1D1D1B" stroke-width="0.6" d="M0,315.269h585.5"/>
+	<path id="path8114" sodipodi:nodetypes="cc" fill="#FFFFFF" stroke="#1D1D1B" stroke-width="0.6" d="M45.039,0v360.308"/>
+	<path id="path8118" sodipodi:nodetypes="cc" fill="#FFFFFF" stroke="#1D1D1B" stroke-width="0.6" d="M90.077,0v360.308"/>
+	<path id="path8120" sodipodi:nodetypes="cc" fill="#FFFFFF" stroke="#1D1D1B" stroke-width="0.6" d="M135.115,0v360.308"/>
+	<path id="path8122" sodipodi:nodetypes="cc" fill="#FFFFFF" stroke="#1D1D1B" stroke-width="0.6" d="M180.154,0v360.308"/>
+	<path id="path8124" sodipodi:nodetypes="cc" fill="#FFFFFF" stroke="#1D1D1B" stroke-width="0.6" d="M225.192,0v360.308"/>
+	<path id="path8126" sodipodi:nodetypes="cc" fill="#FFFFFF" stroke="#1D1D1B" stroke-width="0.6" d="M270.23,0v360.308"/>
+	<path id="path8128" sodipodi:nodetypes="cc" fill="#FFFFFF" stroke="#1D1D1B" stroke-width="0.6" d="M315.27,0v360.308"/>
+	<path id="path8130" sodipodi:nodetypes="cc" fill="#FFFFFF" stroke="#1D1D1B" stroke-width="0.6" d="M360.308,0v360.308"/>
+	<path id="path8132" sodipodi:nodetypes="cc" fill="#FFFFFF" stroke="#1D1D1B" stroke-width="0.6" d="M405.346,0v360.308"/>
+	<path id="path8134" sodipodi:nodetypes="cc" fill="#FFFFFF" stroke="#1D1D1B" stroke-width="0.6" d="M450.385,0v360.308"/>
+	<path id="path8136" sodipodi:nodetypes="cc" fill="#FFFFFF" stroke="#1D1D1B" stroke-width="0.6" d="M495.423,0v360.308"/>
+	<path id="path8138" sodipodi:nodetypes="cc" fill="#FFFFFF" stroke="#1D1D1B" stroke-width="0.6" d="M540.462,0v360.308"/>
 </g>
 <g id="layer1" inkscape:label="Layer 1" inkscape:groupmode="layer">
-	<path id="path2761" fill="none" stroke="#000000" stroke-width="1.6" d="M-31.808-50.383v360.308"/>
-	<path id="path2763" fill="none" stroke="#000000" stroke-width="1.6" d="M-257,84.732h225.192"/>
-	<path id="path2767" fill="none" stroke="#000000" stroke-width="1.6" d="M-121.885-50.383V84.732"/>
-	<path id="path2769" sodipodi:nodetypes="cc" fill="none" stroke="#000000" stroke-width="1.6" d="M-121.885,39.694h90.077"/>
-	<path id="path2771" fill="none" stroke="#000000" stroke-width="1.6" d="M-76.846,39.694v45.038"/>
-	<text transform="matrix(1 0 0 1 -85.7656 6.8296)" font-family="'TimesNewRomanPSMT'" font-size="36.0308">2</text>
-	<text transform="matrix(1 0 0 1 -198.3623 29.3496)" font-family="'TimesNewRomanPSMT'" font-size="36.0308">3</text>
-	<text transform="matrix(1 0 0 1 -153.3237 209.5039)" font-family="'TimesNewRomanPSMT'" font-size="36.0308">5</text>
-	<text transform="matrix(1 0 0 1 139.4268 141.9463)" font-family="'TimesNewRomanPSMT'" font-size="36.0308">8</text>
+	<path id="path2761" fill="none" stroke="#FFFFFF" stroke-width="1.6" d="M225.192,0v360.308"/>
+	<path id="path2763" fill="none" stroke="#FFFFFF" stroke-width="1.6" d="M0,135.115h225.191"/>
+	<path id="path2767" fill="none" stroke="#FFFFFF" stroke-width="1.6" d="M135.115,0v135.115"/>
+	<path id="path2769" sodipodi:nodetypes="cc" fill="none" stroke="#FFFFFF" stroke-width="1.6" d="M135.115,90.077h90.077"/>
+	<path id="path2771" fill="none" stroke="#FFFFFF" stroke-width="1.6" d="M180.154,90.077v45.038"/>
+	
+		<text transform="matrix(1 0 0 1 171.2341 57.2126)" fill="#FFFFFF" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'TimesNewRomanPSMT'" font-size="36.0308">2</text>
+	
+		<text transform="matrix(1 0 0 1 58.6375 79.7322)" fill="#FFFFFF" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'TimesNewRomanPSMT'" font-size="36.0308">3</text>
+	
+		<text transform="matrix(1 0 0 1 103.676 259.8865)" fill="#FFFFFF" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'TimesNewRomanPSMT'" font-size="36.0308">5</text>
+	
+		<text transform="matrix(1 0 0 1 396.426 192.3289)" fill="#FFFFFF" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'TimesNewRomanPSMT'" font-size="36.0308">8</text>
 </g>
 <g id="layer3" inkscape:label="Text" inkscape:groupmode="layer">
-	<text transform="matrix(1 0 0 1 -108.2847 74.3892)" font-family="'TimesNewRomanPSMT'" font-size="36.0308">1</text>
-	<text transform="matrix(1 0 0 1 -63.2471 74.3892)" font-family="'TimesNewRomanPSMT'" font-size="36.0308">1</text>
+	
+		<text transform="matrix(1 0 0 1 148.7151 124.7722)" fill="#FFFFFF" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'TimesNewRomanPSMT'" font-size="36.0308">1</text>
+	
+		<text transform="matrix(1 0 0 1 193.7527 124.7722)" fill="#FFFFFF" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'TimesNewRomanPSMT'" font-size="36.0308">1</text>
 </g>
 </svg>

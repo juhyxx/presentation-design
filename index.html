@@ -2,671 +2,966 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=1024" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta charset="utf-8">
+
     <title>Design for developers</title>
 
-    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
 
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-    <link href="bower_components/impress.js/css/impress-demo.css" rel="stylesheet" />
-    <link href="css/main.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <link rel="shortcut icon" href="favicon.png" />
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/default.css" id="theme">
 
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet" href="css/add.css">
+
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+    if (window.location.search.match(/print-pdf/gi)) {
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'css/print/pdf.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    }
+    </script>
+
+    <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
 </head>
 
 <body>
 
-    <div id="impress">
-        <section class="step">
-            <h1>Design for developers</h1>
-
-        </section>
-
-        <section class="step" >
-            <h1>Colors</h1>
-
-        </section>
-
-        <section class="step">
-            <h2>Color spaces</h2>
-            <h2>RGB</h2>
-            <div class="color-box">
-                <div style="background-color: #FF0000"></div>
-                <div style="background-color: #00FF00"></div>
-                <div style="background-color: #0000FF"></div>
-            </div>
-            <h2>CMYK</h2>
-            <div class="color-box">
-                <div style="background-color: #00aeef"></div>
-                <div style="background-color: #ec008c"></div>
-                <div style="background-color: #fff200"></div>
-                <div style="background-color: #231f20"></div>
-            </div>
-
-        </section>
-
-
-        <section class="step">
-            <div>
-                <h2>Colors - HSB</h2>
-                <!--img src="hsb.svg"-->
-
-                <svg height="600" width="600" viewBox="0 80 230 230" style="width: 100%">
-                    <circle cx="110" cy="200" r="105" stroke-width="3" fill="white" />
-                    <polygon points="101,101 110,200 120,101" transform="rotate(0, 110 100)" style="fill:hsl(0, 100%, 50%);" />
-                    <polygon points="101,101 110,200 120,101" transform="rotate(10, 110 200)" style="fill:hsl(10, 100%, 50%);" />
-                    <polygon points="101,101 110,200 120,101" transform="rotate(20, 110 200)" style="fill:hsl(20, 100%, 50%);" />
-                    <polygon points="101,101 110,200 120,101" transform="rotate(30, 110 200)" style="fill:hsl(30, 100%, 50%);" />
-                    <polygon points="101,101 110,200 120,101" transform="rotate(40, 110 200)" style="fill:hsl(40, 100%, 50%);" />
-                    <polygon points="101,101 110,200 120,101" transform="rotate(50, 110 200)" style="fill:hsl(50, 100%, 50%);" />
-                    <polygon points="101,101 110,200 120,101" transform="rotate(60, 110 200)" style="fill:hsl(60, 100%, 50%);" />
-                    <polygon points="101,101 110,200 120,101" transform="rotate(70, 110 200)" style="fill:hsl(70, 100%, 50%);" />
-                    <polygon points="101,101 110,200 120,101" transform="rotate(80, 110 200)" style="fill:hsl(80, 100%, 50%);" />
-                    <polygon points="101,101 110,200 120,101" transform="rotate(90, 110 200)" style="fill:hsl(90, 100%, 50%);" />
-                    <polygon points="101,101 110,200 120,101" transform="rotate(100, 110 200)" style="fill:hsl(100, 100%, 50%);" />
-                    <polygon points="101,101 110,200 120,101" transform="rotate(110, 110 200)" style="fill:hsl(110, 100%, 50%);" />
-                    <polygon points="101,101 110,200 120,101" transform="rotate(120, 110 200)" style="fill:hsl(120, 100%, 50%);" />
-                    <polygon points="101,101 110,200 120,101" transform="rotate(130, 110 200)" style="fill:hsl(130, 100%, 50%);" />
-                    <polygon points="101,101 110,200 120,101" transform="rotate(140, 110 200)" style="fill:hsl(140, 100%, 50%);" />
-                    <polygon points="101,101 110,200 120,101" transform="rotate(150, 110 200)" style="fill:hsl(150, 100%, 50%);" />
-                    <polygon points="101,101 110,200 120,101" transform="rotate(160, 110 200)" style="fill:hsl(160, 100%, 50%);" />
-                    <polygon points="101,101 110,200 120,101" transform="rotate(170, 110 200)" style="fill:hsl(170, 100%, 50%);" />
-                    <polygon points="101,101 110,200 120,101" transform="rotate(180, 110 200)" style="fill:hsl(180, 100%, 50%);" />
-                    <polygon points="101,101 110,200 120,101" transform="rotate(190, 110 200)" style="fill:hsl(190, 100%, 50%);" />
-                    <polygon points="101,101 110,200 120,101" transform="rotate(200, 110 200)" style="fill:hsl(200, 100%, 50%);" />
-                    <polygon points="101,101 110,200 120,101" transform="rotate(210, 110 200)" style="fill:hsl(210, 100%, 50%);" />
-                    <polygon points="101,101 110,200 120,101" transform="rotate(220, 110 200)" style="fill:hsl(220, 100%, 50%);" />
-                    <polygon points="101,101 110,200 120,101" transform="rotate(230, 110 200)" style="fill:hsl(230, 100%, 50%);" />
-                    <polygon points="101,101 110,200 120,101" transform="rotate(240, 110 200)" style="fill:hsl(240, 100%, 50%);" />
-                    <polygon points="101,101 110,200 120,101" transform="rotate(250, 110 200)" style="fill:hsl(250, 100%, 50%);" />
-                    <polygon points="101,101 110,200 120,101" transform="rotate(260, 110 200)" style="fill:hsl(260, 100%, 50%);" />
-                    <polygon points="101,101 110,200 120,101" transform="rotate(270, 110 200)" style="fill:hsl(270, 100%, 50%);" />
-                    <polygon points="101,101 110,200 120,101" transform="rotate(280, 110 200)" style="fill:hsl(280, 100%, 50%);" />
-                    <polygon points="101,101 110,200 120,101" transform="rotate(290, 110 200)" style="fill:hsl(290, 100%, 50%);" />
-                    <polygon points="101,101 110,200 120,101" transform="rotate(300, 110 200)" style="fill:hsl(300, 100%, 50%);" />
-                    <polygon points="101,101 110,200 120,101" transform="rotate(310, 110 200)" style="fill:hsl(310, 100%, 50%);" />
-                    <polygon points="101,101 110,200 120,101" transform="rotate(320, 110 200)" style="fill:hsl(320, 100%, 50%);" />
-                    <polygon points="101,101 110,200 120,101" transform="rotate(330, 110 200)" style="fill:hsl(330, 100%, 50%);" />
-                    <polygon points="101,101 110,200 120,101" transform="rotate(340, 110 200)" style="fill:hsl(340, 100%, 50%);" />
-                    <polygon points="101,101 110,200 120,101" transform="rotate(350, 110 200)" style="fill:hsl(350, 100%, 50%);" />
-                    <circle cx="110" cy="200" r="50" stroke-width="3" fill="white" />
-
-                    <line x1="0" y1="200" x2="225" y2="200" style="stroke:darkgray;stroke-width:1" />
-                    <line x1="110" y1="90" x2="110" y2="320" style="stroke:darkgray;stroke-width:1" />
-                </svg>
-            </div>
-        </section>
-
-        <section class="step">
-            <h2>Color harmony</h2>
-        </section>
-
-        <section class="step">
-            <h2>Cold/Warm</h2>
-
-            <svg height="600" width="600" viewBox="0 80 230 230" style="width: 100%">
-                <circle cx="110" cy="200" r="105" stroke-width="3" fill="white" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(0, 110 100)" style="fill:hsl(0, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(10, 110 200)" style="fill:hsl(10, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(20, 110 200)" style="fill:hsl(20, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(30, 110 200)" style="fill:hsl(30, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(40, 110 200)" style="fill:hsl(40, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(50, 110 200)" style="fill:hsl(50, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(60, 110 200)" style="fill:hsl(60, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(70, 110 200)" style="fill:hsl(70, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(80, 110 200)" style="fill:hsl(80, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(90, 110 200)" style="fill:hsl(90, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(100, 110 200)" style="fill:hsl(100, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(110, 110 200)" style="fill:hsl(110, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(120, 110 200)" style="fill:hsl(120, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(130, 110 200)" style="fill:hsl(130, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(140, 110 200)" style="fill:hsl(140, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(150, 110 200)" style="fill:hsl(150, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(160, 110 200)" style="fill:hsl(160, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(170, 110 200)" style="fill:hsl(170, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(180, 110 200)" style="fill:hsl(180, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(190, 110 200)" style="fill:hsl(190, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(200, 110 200)" style="fill:hsl(200, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(210, 110 200)" style="fill:hsl(210, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(220, 110 200)" style="fill:hsl(220, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(230, 110 200)" style="fill:hsl(230, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(240, 110 200)" style="fill:hsl(240, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(250, 110 200)" style="fill:hsl(250, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(260, 110 200)" style="fill:hsl(260, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(270, 110 200)" style="fill:hsl(270, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(280, 110 200)" style="fill:hsl(280, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(290, 110 200)" style="fill:hsl(290, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(300, 110 200)" style="fill:hsl(300, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(310, 110 200)" style="fill:hsl(310, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(320, 110 200)" style="fill:hsl(320, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(330, 110 200)" style="fill:hsl(330, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(340, 110 200)" style="fill:hsl(340, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(350, 110 200)" style="fill:hsl(350, 100%, 50%);" />
-                <circle cx="110" cy="200" r="50" stroke-width="3" fill="white" />
-
-                <line x1="0" y1="200" x2="225" y2="200" transform="rotate(220, 110 200)" style="stroke:darkgray;stroke-width:1" />
-            </svg>
-        </section>
-
-        <section class="step">
-            <h2>Example</h2>
-
-            <svg height="600" width="600" viewBox="0 80 10 700" style="width: 100%;position:absolute;">
-                <circle cx="110" cy="200" r="105" stroke-width="3" fill="white" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(0, 110 100)" style="fill:hsl(0, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(10, 110 200)" style="fill:hsl(10, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(20, 110 200)" style="fill:hsl(20, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(30, 110 200)" style="fill:hsl(30, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(40, 110 200)" style="fill:hsl(40, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(50, 110 200)" style="fill:hsl(50, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(60, 110 200)" style="fill:hsl(60, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(70, 110 200)" style="fill:hsl(70, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(80, 110 200)" style="fill:hsl(80, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(90, 110 200)" style="fill:hsl(90, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(100, 110 200)" style="fill:hsl(100, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(110, 110 200)" style="fill:hsl(110, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(120, 110 200)" style="fill:hsl(120, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(130, 110 200)" style="fill:hsl(130, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(140, 110 200)" style="fill:hsl(140, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(150, 110 200)" style="fill:hsl(150, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(160, 110 200)" style="fill:hsl(160, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(170, 110 200)" style="fill:hsl(170, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(180, 110 200)" style="fill:hsl(180, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(190, 110 200)" style="fill:hsl(190, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(200, 110 200)" style="fill:hsl(200, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(210, 110 200)" style="fill:hsl(210, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(220, 110 200)" style="fill:hsl(220, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(230, 110 200)" style="fill:hsl(230, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(240, 110 200)" style="fill:hsl(240, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(250, 110 200)" style="fill:hsl(250, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(260, 110 200)" style="fill:hsl(260, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(270, 110 200)" style="fill:hsl(270, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(280, 110 200)" style="fill:hsl(280, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(290, 110 200)" style="fill:hsl(290, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(300, 110 200)" style="fill:hsl(300, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(310, 110 200)" style="fill:hsl(310, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(320, 110 200)" style="fill:hsl(320, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(330, 110 200)" style="fill:hsl(330, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(340, 110 200)" style="fill:hsl(340, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(350, 110 200)" style="fill:hsl(350, 100%, 50%);" />
-                <circle cx="110" cy="200" r="50" stroke-width="3" fill="white" />
-
-                <circle cx="110" cy="120" r="10" stroke="white" transform="rotate(180, 110 200)" stroke-width="3" fill="#75c9ca" />
-                <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(180, 110 200)" stroke-width="3" fill="#2a2d2d" />
-                <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(168, 110 200)" stroke-width="3" fill="#e7eceb" />
-
-                <img src="img/1.jpg" style="height: 500px">
-
-            </svg>
-        </section>
-
-        <section class="step">
-            <h2>Example</h2>
-
-            <svg height="600" width="600" viewBox="0 80 10 700" style="width: 100%;position:absolute;">
-                <circle cx="110" cy="200" r="105" stroke-width="3" fill="white" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(0, 110 100)" style="fill:hsl(0, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(10, 110 200)" style="fill:hsl(10, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(20, 110 200)" style="fill:hsl(20, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(30, 110 200)" style="fill:hsl(30, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(40, 110 200)" style="fill:hsl(40, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(50, 110 200)" style="fill:hsl(50, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(60, 110 200)" style="fill:hsl(60, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(70, 110 200)" style="fill:hsl(70, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(80, 110 200)" style="fill:hsl(80, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(90, 110 200)" style="fill:hsl(90, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(100, 110 200)" style="fill:hsl(100, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(110, 110 200)" style="fill:hsl(110, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(120, 110 200)" style="fill:hsl(120, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(130, 110 200)" style="fill:hsl(130, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(140, 110 200)" style="fill:hsl(140, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(150, 110 200)" style="fill:hsl(150, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(160, 110 200)" style="fill:hsl(160, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(170, 110 200)" style="fill:hsl(170, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(180, 110 200)" style="fill:hsl(180, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(190, 110 200)" style="fill:hsl(190, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(200, 110 200)" style="fill:hsl(200, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(210, 110 200)" style="fill:hsl(210, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(220, 110 200)" style="fill:hsl(220, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(230, 110 200)" style="fill:hsl(230, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(240, 110 200)" style="fill:hsl(240, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(250, 110 200)" style="fill:hsl(250, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(260, 110 200)" style="fill:hsl(260, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(270, 110 200)" style="fill:hsl(270, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(280, 110 200)" style="fill:hsl(280, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(290, 110 200)" style="fill:hsl(290, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(300, 110 200)" style="fill:hsl(300, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(310, 110 200)" style="fill:hsl(310, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(320, 110 200)" style="fill:hsl(320, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(330, 110 200)" style="fill:hsl(330, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(340, 110 200)" style="fill:hsl(340, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(350, 110 200)" style="fill:hsl(350, 100%, 50%);" />
-                <circle cx="110" cy="200" r="50" stroke-width="3" fill="white" />
-
-                <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(355, 110 200)" stroke-width="3" fill="#de1e2c" />
-                <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(180, 110 200)" stroke-width="3" fill="#eef0f0" />
-                <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(202, 110 200)" stroke-width="3" fill="#1883c4" />
-                <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(113, 110 200)" stroke-width="3" fill="#4a8843" />
-
-                <img src="img/2.jpg" style="height: 500px">
-
-            </svg>
-        </section>
-
-        <section class="step">
-            <h2>Example</h2>
-
-            <svg height="600" width="600" viewBox="0 80 10 700" style="width: 100%;position:absolute;">
-                <circle cx="110" cy="200" r="105" stroke-width="3" fill="white" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(0, 110 100)" style="fill:hsl(0, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(10, 110 200)" style="fill:hsl(10, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(20, 110 200)" style="fill:hsl(20, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(30, 110 200)" style="fill:hsl(30, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(40, 110 200)" style="fill:hsl(40, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(50, 110 200)" style="fill:hsl(50, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(60, 110 200)" style="fill:hsl(60, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(70, 110 200)" style="fill:hsl(70, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(80, 110 200)" style="fill:hsl(80, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(90, 110 200)" style="fill:hsl(90, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(100, 110 200)" style="fill:hsl(100, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(110, 110 200)" style="fill:hsl(110, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(120, 110 200)" style="fill:hsl(120, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(130, 110 200)" style="fill:hsl(130, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(140, 110 200)" style="fill:hsl(140, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(150, 110 200)" style="fill:hsl(150, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(160, 110 200)" style="fill:hsl(160, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(170, 110 200)" style="fill:hsl(170, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(180, 110 200)" style="fill:hsl(180, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(190, 110 200)" style="fill:hsl(190, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(200, 110 200)" style="fill:hsl(200, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(210, 110 200)" style="fill:hsl(210, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(220, 110 200)" style="fill:hsl(220, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(230, 110 200)" style="fill:hsl(230, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(240, 110 200)" style="fill:hsl(240, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(250, 110 200)" style="fill:hsl(250, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(260, 110 200)" style="fill:hsl(260, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(270, 110 200)" style="fill:hsl(270, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(280, 110 200)" style="fill:hsl(280, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(290, 110 200)" style="fill:hsl(290, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(300, 110 200)" style="fill:hsl(300, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(310, 110 200)" style="fill:hsl(310, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(320, 110 200)" style="fill:hsl(320, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(330, 110 200)" style="fill:hsl(330, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(340, 110 200)" style="fill:hsl(340, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(350, 110 200)" style="fill:hsl(350, 100%, 50%);" />
-                <circle cx="110" cy="200" r="50" stroke-width="3" fill="white" />
-
-                <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(57, 110 200)" stroke-width="3" fill="#dfdca3" />
-                <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(37, 110 200)" stroke-width="3" fill="#e69712" />
-                <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(200, 110 200)" stroke-width="3" fill="#1883c4" />
-                <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(358, 110 200)" stroke-width="3" fill="#dc373c" />
-
-                <img src="img/3.jpg" style="height: 500px">
-
-            </svg>
-        </section>
-
-        <section class="step">
-            <h2>Example</h2>
-
-            <svg height="600" width="600" viewBox="0 80 10 700" style="width: 100%;position:absolute;">
-                <circle cx="110" cy="200" r="105" stroke-width="3" fill="white" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(0, 110 100)" style="fill:hsl(0, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(10, 110 200)" style="fill:hsl(10, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(20, 110 200)" style="fill:hsl(20, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(30, 110 200)" style="fill:hsl(30, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(40, 110 200)" style="fill:hsl(40, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(50, 110 200)" style="fill:hsl(50, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(60, 110 200)" style="fill:hsl(60, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(70, 110 200)" style="fill:hsl(70, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(80, 110 200)" style="fill:hsl(80, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(90, 110 200)" style="fill:hsl(90, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(100, 110 200)" style="fill:hsl(100, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(110, 110 200)" style="fill:hsl(110, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(120, 110 200)" style="fill:hsl(120, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(130, 110 200)" style="fill:hsl(130, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(140, 110 200)" style="fill:hsl(140, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(150, 110 200)" style="fill:hsl(150, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(160, 110 200)" style="fill:hsl(160, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(170, 110 200)" style="fill:hsl(170, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(180, 110 200)" style="fill:hsl(180, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(190, 110 200)" style="fill:hsl(190, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(200, 110 200)" style="fill:hsl(200, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(210, 110 200)" style="fill:hsl(210, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(220, 110 200)" style="fill:hsl(220, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(230, 110 200)" style="fill:hsl(230, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(240, 110 200)" style="fill:hsl(240, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(250, 110 200)" style="fill:hsl(250, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(260, 110 200)" style="fill:hsl(260, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(270, 110 200)" style="fill:hsl(270, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(280, 110 200)" style="fill:hsl(280, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(290, 110 200)" style="fill:hsl(290, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(300, 110 200)" style="fill:hsl(300, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(310, 110 200)" style="fill:hsl(310, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(320, 110 200)" style="fill:hsl(320, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(330, 110 200)" style="fill:hsl(330, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(340, 110 200)" style="fill:hsl(340, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(350, 110 200)" style="fill:hsl(350, 100%, 50%);" />
-                <circle cx="110" cy="200" r="50" stroke-width="3" fill="white" />
-
-                <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(205, 110 200)" stroke-width="3" fill="#cbcfd2" />
-                <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(218, 110 200)" stroke-width="3" fill="#a5abb6" />
-                <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(300, 110 200)" stroke-width="3" fill="#949294" />
-
-                <img src="img/4.png" style="height: 500px">
-
-            </svg>
-        </section>
-
-
-        <section class="step">
-            <h2>Example</h2>
-
-            <svg height="600" width="600" viewBox="0 80 10 700" style="width: 100%;position:absolute;">
-                <circle cx="110" cy="200" r="105" stroke-width="3" fill="white" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(0, 110 100)" style="fill:hsl(0, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(10, 110 200)" style="fill:hsl(10, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(20, 110 200)" style="fill:hsl(20, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(30, 110 200)" style="fill:hsl(30, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(40, 110 200)" style="fill:hsl(40, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(50, 110 200)" style="fill:hsl(50, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(60, 110 200)" style="fill:hsl(60, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(70, 110 200)" style="fill:hsl(70, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(80, 110 200)" style="fill:hsl(80, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(90, 110 200)" style="fill:hsl(90, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(100, 110 200)" style="fill:hsl(100, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(110, 110 200)" style="fill:hsl(110, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(120, 110 200)" style="fill:hsl(120, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(130, 110 200)" style="fill:hsl(130, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(140, 110 200)" style="fill:hsl(140, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(150, 110 200)" style="fill:hsl(150, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(160, 110 200)" style="fill:hsl(160, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(170, 110 200)" style="fill:hsl(170, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(180, 110 200)" style="fill:hsl(180, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(190, 110 200)" style="fill:hsl(190, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(200, 110 200)" style="fill:hsl(200, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(210, 110 200)" style="fill:hsl(210, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(220, 110 200)" style="fill:hsl(220, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(230, 110 200)" style="fill:hsl(230, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(240, 110 200)" style="fill:hsl(240, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(250, 110 200)" style="fill:hsl(250, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(260, 110 200)" style="fill:hsl(260, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(270, 110 200)" style="fill:hsl(270, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(280, 110 200)" style="fill:hsl(280, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(290, 110 200)" style="fill:hsl(290, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(300, 110 200)" style="fill:hsl(300, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(310, 110 200)" style="fill:hsl(310, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(320, 110 200)" style="fill:hsl(320, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(330, 110 200)" style="fill:hsl(330, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(340, 110 200)" style="fill:hsl(340, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(350, 110 200)" style="fill:hsl(350, 100%, 50%);" />
-                <circle cx="110" cy="200" r="50" stroke-width="3" fill="white" />
-
-                <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(10, 110 200)" stroke-width="3" fill="#1e0c08" />
-                <circle cx="110" cy="120" r="10" stroke="white" transform="rotate(46, 110 200)" stroke-width="3" fill="#9b8434" />
-                <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(23, 110 200)" stroke-width="3" fill="#502a12" />
-                <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(43, 110 200)" stroke-width="3" fill="#382f17" />
-                <circle cx="110" cy="140" r="10" stroke="white" transform="rotate(43, 110 200)" stroke-width="3" fill="#f5c341" />
-
-                <img src="img/5.jpg" style="height: 500px">
-
-            </svg>
-        </section>
-
-        <section class="step">
-            <h2>Example</h2>
-
-            <svg height="600" width="600" viewBox="0 80 10 700" style="width: 100%;position:absolute;">
-                <circle cx="110" cy="200" r="105" stroke-width="3" fill="white" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(0, 110 100)" style="fill:hsl(0, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(10, 110 200)" style="fill:hsl(10, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(20, 110 200)" style="fill:hsl(20, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(30, 110 200)" style="fill:hsl(30, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(40, 110 200)" style="fill:hsl(40, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(50, 110 200)" style="fill:hsl(50, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(60, 110 200)" style="fill:hsl(60, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(70, 110 200)" style="fill:hsl(70, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(80, 110 200)" style="fill:hsl(80, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(90, 110 200)" style="fill:hsl(90, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(100, 110 200)" style="fill:hsl(100, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(110, 110 200)" style="fill:hsl(110, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(120, 110 200)" style="fill:hsl(120, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(130, 110 200)" style="fill:hsl(130, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(140, 110 200)" style="fill:hsl(140, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(150, 110 200)" style="fill:hsl(150, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(160, 110 200)" style="fill:hsl(160, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(170, 110 200)" style="fill:hsl(170, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(180, 110 200)" style="fill:hsl(180, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(190, 110 200)" style="fill:hsl(190, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(200, 110 200)" style="fill:hsl(200, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(210, 110 200)" style="fill:hsl(210, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(220, 110 200)" style="fill:hsl(220, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(230, 110 200)" style="fill:hsl(230, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(240, 110 200)" style="fill:hsl(240, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(250, 110 200)" style="fill:hsl(250, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(260, 110 200)" style="fill:hsl(260, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(270, 110 200)" style="fill:hsl(270, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(280, 110 200)" style="fill:hsl(280, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(290, 110 200)" style="fill:hsl(290, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(300, 110 200)" style="fill:hsl(300, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(310, 110 200)" style="fill:hsl(310, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(320, 110 200)" style="fill:hsl(320, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(330, 110 200)" style="fill:hsl(330, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(340, 110 200)" style="fill:hsl(340, 100%, 50%);" />
-                <polygon points="101,101 110,200 120,101" transform="rotate(350, 110 200)" style="fill:hsl(350, 100%, 50%);" />
-                <circle cx="110" cy="200" r="50" stroke-width="3" fill="white" />
-
-                <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(86, 110 200)" stroke-width="3" fill="#395d0a" />
-                <circle cx="110" cy="120" r="10" stroke="white" transform="rotate(79, 110 200)" stroke-width="3" fill="#6a9a07" />
-                <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(218, 110 200)" stroke-width="3" fill="#538bee" />
-                <circle cx="110" cy="120" r="10" stroke="white" transform="rotate(214, 110 200)" stroke-width="3" fill="#7eaff0" />
-
-                <img src="img/6.png" style="height: 500px">
-
-            </svg>
-        </section>
-
-        <section class="step">
-            <h1>Layout</h1>
-        </section>
-
-
-
-
-        <section class="step">
-            <h2>Golden cut</h2>
-
-            <img src="img/cut.svg" style="width:100%">
-
-        </section>
-
-        <section class="step">
-            <h1 style="font-size:500px;margin:0;">1.618</h1>
-        </section>
-
-        <section class="step">
-            <h2>Golden rectangle</h2>
-            <svg height="600" width="600" viewBox="-1 -1 170 151">
-                <rect width="161" height="100" style="fill:lightgray;stroke-width:1;stroke:#444444" />
-                <rect width="100" height="100" style="fill:white;stroke-width:1;stroke:#444444" />
-                <text x="105" y="120" fill="black" font-size="20">0.618</text>
-                <text x="40" y="120" fill="black" font-size="20">1</text>
-            </svg>
-        </section>
-
-        <section class="step">
-            <img src="img/tower.svg" style="height: 500px">
-        </section>
-      
-        <section class="step">
-            <h2>Layouts</h2>
-            <svg height="600" width="600" viewBox="-1 -20 170 151">
-                <rect width="161" height="100" style="fill:lightgray;stroke-width:1;stroke:#444444" />
-                <rect width="100" height="100" style="fill:white;stroke-width:1;stroke:#444444" />
-                <text x="100" y="120" fill="black" font-size="20">367px</text>
-                <text x="20" y="120" fill="black" font-size="20">593px</text>
-                <text x="45" y="-8" fill="black" font-size="20">960px</text>
-            </svg>
-        </section>
-
-
-        <section class="step">
-            <h2>Fibonacci spiral </h2>
-            <img src="img/spiral.svg" style="height: 500px">
-        </section>
-
-        <section class="step">
-            <img style="float:left;height: 350px" src="img/nautilus.jpg">
-            <img src="img/hurrican.jpg" style="height: 350px">
-        </section>
-
-
-        <section class="step">
-            <h2>Fibonacci numbers</h2>
-            <img src="img/FibonacciBlocks.svg" alt="">
-            <div>1,2,3,5,8</div>
-        </section>
-
-
-        <section class="step">
-            <img src="img/layout1.svg" style="width:100%">
-        </section>
-
-        <section class="step">
-            <img src="img/layout2.svg" style="width:100%">
-        </section>
-
-        <section class="step">
-            <img src="img/layout3.svg" style="width:100%">
-        </section>
-
-        <section class="step">
-            <img src="img/layout4.svg" style="width:100%">
-        </section>
-
-        <section class="step">
-            <img src="img/layout-ex1.png" alt="" style="width:100%">
-        </section>
-
-        <section class="step">
-            <img src="img/layout-ex2.png" alt="" style="width:100%">
-        </section>
-
-
-
-
-        <section class="step">
-            <h2>Paper Formats (1.414)</h2>
-            <svg height="600" width="600" viewBox="-1 -1 170 151">
-                <rect width="100" height="141" style="fill:lightgray;stroke-width:1;stroke:#444444" />
-                <rect width="100" height="100" style="fill:white;stroke-width:1;stroke:#444444" />
-            </svg>
-        </section>
-
-
-        <section class="step">
-            <h1>Icons</h1>
-        </section>
-
-        <section class="step">
-
-            <h2>Mental mapping</h2> find associtation
-            <br>
-            <h2>Real things</h2>
-            <img style="height:4em" src="img/icons/car.svg">
-            <img style="height:4em" src="img/icons/home.svg">
-            <img style="height:3em" src="img/icons/key.svg">
-
-        </section>
-
-        <section class="step">
-            <h2>Metaphorical meaning</h2>
-            <img style="height:4em" src="img/icons/star.svg">
-            <img style="height:4em" src="img/icons/wheel.svg">
-            <img style="height:4em" src="img/icons/bulb.svg">
-        </section>
-
-        <section class="step">
-            <h2>Agreed meaning</h2>
-            <img style="height:4em" src="img/icons/question.svg">
-            <img style="height:4em" src="img/icons/thums.svg">
-            <img style="height:4em" src="img/icons/place.svg">
-            <img style="height:4em" src="img/icons/rss.svg">
-        </section>
-
-        <section class="step">
-            <img src="img/applemail.jpg">
-            <br>
-
-            <img src="img/mailbox1.jpg" style="height:150px;float:left;">
-            <img src="img/mailbox2.jpg" style="height:150px;float:left;">
-            <img src="img/mailbox3.jpg" style="height:150px;float:left;">
-            <img src="img/mailbox4.jpg" style="height:150px;float:left;">
-            <img src="img/mailbox5.jpg" style="height:150px;float:left;">
-
-        </section>
-
-
-        <section class="step">
-            <h2>Arrow hell</h2>
-            <img style="height:4em" src="img/icons/arr-left.svg">
-            <img style="height:4em" src="img/icons/arr-right.svg">
-            <img style="height:4em" src="img/icons/arr-up.svg">
-            <img style="height:4em" src="img/icons/arr-down.svg">
-            <img style="height:4em" src="img/icons/reply.svg">
-
-        </section>
-
-        <section class="step">
-            <h2>Story of "Unsubscribe"</h2>
-            <img src="img/unsubscribe-design.svg" alt="">
-        </section>
-
-        <section class="step">
-            <h2>Unsubscribe</h2>
-            <img src="img/icons/eject.svg" style="height:5em" alt="">
-        </section>
-
-
-        <section class="step">
-            <h2>Context dependency</h2>
-            <button><img src="img/icons/deletedoc.svg" alt="">
-            </button>
-            <br>
-            <button><img src="img/icons/delete.svg" alt="">Document</button>
-            <br>
-            <button><img src="img/icons/doc.svg" alt="">Delete</button>
-            <br>
-            <button><img src="img/icons/delete.svg" alt="">Delete</button>
-            <br>
-        </section>
+    <div class="reveal">
+
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            <section>
+                <h1>Design for developers</h1>
+            </section>
+
+            <section>
+                <section>
+                    <h1>Colors</h1>
+                </section>
+
+                <section>
+                    <h2>RGB</h2>
+
+                    <svg height="300" width="500" viewBox="-5 0 160 50">
+                        <rect x=0 y=0 width="50" height="50" style="fill:red;stroke-width:2;stroke:white" />
+                        <rect x=50 y=0 width="50" height="50" style="fill:green;stroke-width:2;stroke:white" />
+                        <rect x=100 y=0 width="50" height="50" style="fill:blue;stroke-width:2;stroke:white" />
+                    </svg>
+
+                    <svg height="300" width="600" viewBox="0 0 125 20">
+                        <rect x=0 y=0 width="20" height="20" style="fill:#FFFFFF;stroke-width:1;stroke:white" />
+                        <rect x=20 y=0 width="20" height="20" style="fill:#dddddd;stroke-width:1;stroke:white" />
+                        <rect x=40 y=0 width="20" height="20" style="fill:#aaaaaa;stroke-width:1;stroke:white" />
+                        <rect x=60 y=0 width="20" height="20" style="fill:#666666;stroke-width:1;stroke:white" />
+                        <rect x=80 y=0 width="20" height="20" style="fill:#333333;stroke-width:1;stroke:white" />
+                        <rect x=100 y=0 width="20" height="20" style="fill:#000000;stroke-width:1;stroke:white" />
+                        <text x="2" y="18" fill="black" transform="rotate(0 20,40)" style="font-size:4">#ffffff</text>
+                        <text x="22" y="18" fill="black" transform="rotate(0 20,40)" style="font-size:4">#dddddd</text>
+                        <text x="42" y="18" fill="black" transform="rotate(0 20,40)" style="font-size:4">#aaaaaa</text>
+                        <text x="62" y="18" fill="black" transform="rotate(0 20,40)" style="font-size:4">#666666</text>
+                        <text x="82" y="18" fill="#dddddd" transform="rotate(0 20,40)" style="font-size:4">#333333</text>
+                        <text x="102" y="18" fill="#dddddd" transform="rotate(0 20,40)" style="font-size:4">#000000</text>
+                    </svg>
+
+
+                </section>
+
+                <section>
+                    <h2>CMY</h2>
+
+                    <svg height="300" width="500" viewBox="-5 0 155 50">
+                        <rect x=0 y=0 width="50" height="50" style="fill:#00aeef;stroke-width:2;stroke:white" />
+                        <rect x=50 y=0 width="50" height="50" style="fill:#ec008c;stroke-width:2;stroke:white" />
+                        <rect x=100 y=0 width="50" height="50" style="fill:#fff200;stroke-width:2;stroke:white" />
+                    </svg>
+                </section>
+
+
+                <section>
+                    <div>
+                        <h2>Colors - HSB</h2>
+                        <!--img src="hsb.svg"-->
+
+                        <svg height="600" width="600" viewBox="0 80 230 230" style="width: 100%">
+                            <circle cx="110" cy="200" r="105" stroke-width="3" fill="white" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(0, 110 100)" style="fill:hsl(0, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(10, 110 200)" style="fill:hsl(10, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(20, 110 200)" style="fill:hsl(20, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(30, 110 200)" style="fill:hsl(30, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(40, 110 200)" style="fill:hsl(40, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(50, 110 200)" style="fill:hsl(50, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(60, 110 200)" style="fill:hsl(60, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(70, 110 200)" style="fill:hsl(70, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(80, 110 200)" style="fill:hsl(80, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(90, 110 200)" style="fill:hsl(90, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(100, 110 200)" style="fill:hsl(100, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(110, 110 200)" style="fill:hsl(110, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(120, 110 200)" style="fill:hsl(120, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(130, 110 200)" style="fill:hsl(130, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(140, 110 200)" style="fill:hsl(140, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(150, 110 200)" style="fill:hsl(150, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(160, 110 200)" style="fill:hsl(160, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(170, 110 200)" style="fill:hsl(170, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(180, 110 200)" style="fill:hsl(180, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(190, 110 200)" style="fill:hsl(190, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(200, 110 200)" style="fill:hsl(200, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(210, 110 200)" style="fill:hsl(210, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(220, 110 200)" style="fill:hsl(220, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(230, 110 200)" style="fill:hsl(230, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(240, 110 200)" style="fill:hsl(240, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(250, 110 200)" style="fill:hsl(250, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(260, 110 200)" style="fill:hsl(260, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(270, 110 200)" style="fill:hsl(270, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(280, 110 200)" style="fill:hsl(280, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(290, 110 200)" style="fill:hsl(290, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(300, 110 200)" style="fill:hsl(300, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(310, 110 200)" style="fill:hsl(310, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(320, 110 200)" style="fill:hsl(320, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(330, 110 200)" style="fill:hsl(330, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(340, 110 200)" style="fill:hsl(340, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(350, 110 200)" style="fill:hsl(350, 100%, 50%);" />
+                            <circle cx="110" cy="200" r="50" stroke-width="3" fill="white" />
+
+                            <line x1="0" y1="200" x2="225" y2="200" style="stroke:darkgray;stroke-width:1" />
+                            <line x1="110" y1="90" x2="110" y2="320" style="stroke:darkgray;stroke-width:1" />
+                        </svg>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>HSB vs. HSV</h2>
+                </section>
+
+                <section>
+                    <div>
+                        <h2>Color wheel artistic</h2>
+                        <!--img src="hsb.svg"-->
+
+                        <svg height="600" width="600" viewBox="0 80 230 230" style="width: 100%">
+                            <g>
+                                <circle cx="110" cy="200" r="105" stroke-width="3" fill="white" />
+                                <polygon points="101,101 110,200 120,101" transform="rotate(0, 110 100)" style="fill:hsl(0, 100%, 50%);" />
+                                <polygon points="101,101 110,200 120,101" transform="rotate(10, 110 200)" style="fill:hsl(12, 100%, 50%);" />
+                                <polygon points="101,101 110,200 120,101" transform="rotate(20, 110 200)" style="fill:hsl(20, 100%, 50%);" />
+                                <polygon points="101,101 110,200 120,101" transform="rotate(30, 110 200)" style="fill:hsl(27, 100%, 50%);" />
+                                <polygon points="101,101 110,200 120,101" transform="rotate(40, 110 200)" style="fill:hsl(32, 100%, 50%);" />
+                                <polygon points="101,101 110,200 120,101" transform="rotate(50, 110 200)" style="fill:hsl(36, 100%, 50%);" />
+                                <polygon points="101,101 110,200 120,101" transform="rotate(60, 110 200)" style="fill:hsl(39, 100%, 50%);" />
+                                <polygon points="101,101 110,200 120,101" transform="rotate(70, 110 200)" style="fill:hsl(43, 100%, 50%);" />
+                                <polygon points="101,101 110,200 120,101" transform="rotate(80, 110 200)" style="fill:hsl(46, 100%, 50%);" />
+                                <polygon points="101,101 110,200 120,101" transform="rotate(90, 110 200)" style="fill:hsl(49, 100%, 50%);" />
+                                <polygon points="101,101 110,200 120,101" transform="rotate(100, 110 200)" style="fill:hsl(53, 100%, 50%);" />
+                                <polygon points="101,101 110,200 120,101" transform="rotate(110, 110 200)" style="fill:hsl(56, 100%, 50%);" />
+                                <polygon points="101,101 110,200 120,101" transform="rotate(120, 110 200)" style="fill:hsl(60, 100%, 50%);" />
+                                <polygon points="101,101 110,200 120,101" transform="rotate(130, 110 200)" style="fill:hsl(67, 100%, 50%);" />
+                                <polygon points="101,101 110,200 120,101" transform="rotate(140, 110 200)" style="fill:hsl(73, 100%, 50%);" />
+                                <polygon points="101,101 110,200 120,101" transform="rotate(150, 110 200)" style="fill:hsl(79, 100%, 50%);" />
+                                <polygon points="101,101 110,200 120,101" transform="rotate(160, 110 200)" style="fill:hsl(87, 100%, 50%);" />
+                                <polygon points="101,101 110,200 120,101" transform="rotate(170, 110 200)" style="fill:hsl(99, 100%, 50%);" />
+                                <polygon points="101,101 110,200 120,101" transform="rotate(180, 110 200)" style="fill:hsl(120, 100%, 50%);" />
+                                <polygon points="101,101 110,200 120,101" transform="rotate(190, 110 200)" style="fill:hsl(146, 100%, 50%);" />
+                                <polygon points="101,101 110,200 120,101" transform="rotate(200, 110 200)" style="fill:hsl(162, 100%, 50%);" />
+                                <polygon points="101,101 110,200 120,101" transform="rotate(210, 110 200)" style="fill:hsl(180, 100%, 50%);" />
+                                <polygon points="101,101 110,200 120,101" transform="rotate(220, 110 200)" style="fill:hsl(200, 100%, 50%);" />
+                                <polygon points="101,101 110,200 120,101" transform="rotate(230, 110 200)" style="fill:hsl(211, 100%, 50%);" />
+                                <polygon points="101,101 110,200 120,101" transform="rotate(240, 110 200)" style="fill:hsl(221, 100%, 50%);" />
+                                <polygon points="101,101 110,200 120,101" transform="rotate(250, 110 200)" style="fill:hsl(233, 100%, 50%);" />
+                                <polygon points="101,101 110,200 120,101" transform="rotate(260, 110 200)" style="fill:hsl(245, 100%, 50%);" />
+                                <polygon points="101,101 110,200 120,101" transform="rotate(270, 110 200)" style="fill:hsl(253, 100%, 50%);" />
+                                <polygon points="101,101 110,200 120,101" transform="rotate(280, 110 200)" style="fill:hsl(262, 100%, 50%);" />
+                                <polygon points="101,101 110,200 120,101" transform="rotate(290, 110 200)" style="fill:hsl(269, 100%, 50%);" />
+                                <polygon points="101,101 110,200 120,101" transform="rotate(300, 110 200)" style="fill:hsl(278, 100%, 50%);" />
+                                <polygon points="101,101 110,200 120,101" transform="rotate(310, 110 200)" style="fill:hsl(291, 100%, 50%);" />
+                                <polygon points="101,101 110,200 120,101" transform="rotate(320, 110 200)" style="fill:hsl(311, 100%, 50%);" />
+                                <polygon points="101,101 110,200 120,101" transform="rotate(330, 110 200)" style="fill:hsl(	326, 100%, 50%);" />
+                                <polygon points="101,101 110,200 120,101" transform="rotate(340, 110 200)" style="fill:hsl(336, 100%, 50%);" />
+                                <polygon points="101,101 110,200 120,101" transform="rotate(350, 110 200)" style="fill:hsl(347, 100%, 50%);" />
+                                <circle cx="110" cy="200" r="50" stroke-width="3" fill="white" />
+                            </g>
+
+                            <line x1="0" y1="200" x2="225" y2="200" style="stroke:darkgray;stroke-width:1" />
+                            <line x1="110" y1="90" x2="110" y2="320" style="stroke:darkgray;stroke-width:1" />
+                        </svg>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Color meanings</h2>
+                    <ul>
+                        <li>
+                            <div class="color" style="background-color:red"></div> Fire, Violence, Love, Warning</li>
+                        <li>
+                            <div class="color" style="background-color:orange"></div> Energy, Happiness, Vitality</li>
+                        <li>
+                            <div class="color" style="background-color:yellow"></div> Happiness, Hope, Deceit</li>
+                        <li>
+                            <div class="color" style="background-color:green"></div> New Beginnings, Abundance, Nature</li>
+                        <li>
+                            <div class="color" style="background-color:blue"></div> Calm, Responsible, Sadness</li>
+                        <li>
+                            <div class="color" style="background-color:purple"></div> Creativity, Royalty, Wealth</li>
+                        <li>
+                            <div class="color" style="background-color:black"></div> Mystery, Elegance, Evil</li>
+                        <li>
+                            <div class="color" style="background-color:white"></div> Moody, Conservative, Formality</li>
+                        <li>
+                            <div class="color" style="background-color:gray"></div> Purity, Cleanliness, Virtue</li>
+                        <li>
+                            <div class="color" style="background-color:brown"></div> Nature, Wholesomeness, Dependability</li>
+                    </ul>
+                    <div>
+
+                        <a href="http://www.smashingmagazine.com/2010/01/28/color-theory-for-designers-part-1-the-meaning-of-color/">The Meaning of Color</a>
+                    </div>
+                </section>
+
+
+                <section>
+                    <h2>Cold/Warm</h2>
+
+                    <svg height="600" width="600" viewBox="0 80 230 230" style="width: 100%">
+                        <g>
+                            <circle cx="110" cy="200" r="105" stroke-width="3" fill="white" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(0, 110 100)" style="fill:hsl(0, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(10, 110 200)" style="fill:hsl(12, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(20, 110 200)" style="fill:hsl(20, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(30, 110 200)" style="fill:hsl(27, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(40, 110 200)" style="fill:hsl(32, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(50, 110 200)" style="fill:hsl(36, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(60, 110 200)" style="fill:hsl(39, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(70, 110 200)" style="fill:hsl(43, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(80, 110 200)" style="fill:hsl(46, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(90, 110 200)" style="fill:hsl(49, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(100, 110 200)" style="fill:hsl(53, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(110, 110 200)" style="fill:hsl(56, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(120, 110 200)" style="fill:hsl(60, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(130, 110 200)" style="fill:hsl(67, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(140, 110 200)" style="fill:hsl(73, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(150, 110 200)" style="fill:hsl(79, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(160, 110 200)" style="fill:hsl(87, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(170, 110 200)" style="fill:hsl(99, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(180, 110 200)" style="fill:hsl(120, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(190, 110 200)" style="fill:hsl(146, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(200, 110 200)" style="fill:hsl(162, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(210, 110 200)" style="fill:hsl(180, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(220, 110 200)" style="fill:hsl(200, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(230, 110 200)" style="fill:hsl(211, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(240, 110 200)" style="fill:hsl(221, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(250, 110 200)" style="fill:hsl(233, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(260, 110 200)" style="fill:hsl(245, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(270, 110 200)" style="fill:hsl(253, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(280, 110 200)" style="fill:hsl(262, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(290, 110 200)" style="fill:hsl(269, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(300, 110 200)" style="fill:hsl(278, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(310, 110 200)" style="fill:hsl(291, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(320, 110 200)" style="fill:hsl(311, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(330, 110 200)" style="fill:hsl(	326, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(340, 110 200)" style="fill:hsl(336, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(350, 110 200)" style="fill:hsl(347, 100%, 50%);" />
+                            <circle cx="110" cy="200" r="50" stroke-width="3" fill="white" />
+                        </g>
+                        <linearGradient id="Gradient">
+                            <stop offset="0" stop-color="blue" />
+                            <stop offset="0.4" stop-color="blue" />
+                            <stop offset="0.6" stop-color="red" />
+                            <stop offset="1" stop-color="red" />
+                        </linearGradient>
+
+                        <circle cx="110" cy="200" r="50" stroke-width="3" fill="url(#Gradient)" transform="rotate(-45, 110 200) " />
+
+
+                        <text x="90" y="180" fill="blue" transform="rotate(44, 110 200)" style="font-size:20">warm</text>
+                        <text x="95" y="220" fill="red" transform="rotate(44, 110 200)" style="font-size:20">cold</text>
+                    </svg>
+
+                </section>
+
+                <section>
+                    <h2>Color harmony</h2>
+                </section>
+
+                <section>
+                    <h2>Complementary </h2>
+                    <svg height="600" width="600" viewBox="0 80 200 300">
+                        <defs>
+                            <clipPath id="cut-off-bottom">
+                                <circle cx="110" cy="200" r="95" />
+                            </clipPath>
+                        </defs>
+                        </defs>
+                        <circle cx="110" cy="200" r="101" stroke-width="3" fill="white" />
+
+                        <g>
+                            <circle cx="110" cy="200" r="105" stroke-width="3" fill="white" />
+                            <polygon points="88,101 110,200 135,101" transform="rotate(0, 110 100)" style="fill:hsl(0, 100%, 50%);" clip-path="url(#cut-off-bottom)" />
+                            <polygon points="88,101 110,200 135,101" transform="rotate(30, 110 200)" style="fill:hsl(27, 100%, 50%);" clip-path="url(#cut-off-bottom)" />
+                            <polygon points="88,101 110,200 135,101" transform="rotate(60, 110 200)" style="fill:hsl(39, 100%, 50%);" clip-path="url(#cut-off-bottom)" />
+                            <polygon points="88,101 110,200 135,101" transform="rotate(90, 110 200)" style="fill:hsl(49, 100%, 50%);" clip-path="url(#cut-off-bottom)" />
+                            <polygon points="88,101 110,200 135,101" transform="rotate(120, 110 200)" style="fill:hsl(60, 100%, 50%);" clip-path="url(#cut-off-bottom)" />
+                            <polygon points="88,101 110,200 135,101" transform="rotate(150, 110 200)" style="fill:hsl(79, 100%, 50%);" clip-path="url(#cut-off-bottom)" />
+                            <polygon points="88,101 110,200 135,101" transform="rotate(180, 110 200)" style="fill:hsl(120, 100%, 50%);" clip-path="url(#cut-off-bottom)" />
+                            <polygon points="88,101 110,200 135,101" transform="rotate(210, 110 200)" style="fill:hsl(180, 100%, 50%);" clip-path="url(#cut-off-bottom)" />
+                            <polygon points="88,101 110,200 135,101" transform="rotate(240, 110 200)" style="fill:hsl(221, 100%, 50%);" clip-path="url(#cut-off-bottom)" />
+                            <polygon points="88,101 110,200 135,101" transform="rotate(270, 110 200)" style="fill:hsl(253, 100%, 50%);" clip-path="url(#cut-off-bottom)" />
+                            <polygon points="88,101 110,200 135,101" transform="rotate(300, 110 200)" style="fill:hsl(278, 100%, 50%);" clip-path="url(#cut-off-bottom)" />
+                            <polygon points="88,101 110,200 135,101" transform="rotate(330, 110 200)" style="fill:hsl(	326, 100%, 50%);" clip-path="url(#cut-off-bottom)" />
+                            <circle cx="110" cy="200" r="50" stroke-width="3" fill="white" />
+                        </g>
+
+
+                        <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(0, 110 200)" stroke-width="4" fill="hsl(0, 100%, 50%)" />
+                        <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(180, 110 200)" stroke-width="4" fill="hsl(120, 100%, 50%)" />
+                    </svg>
+                </section>
+
+
+                <section>
+                    <h2>Analogous</h2>
+                    <svg height="600" width="600" viewBox="0 80 200 300">
+                        <defs>
+                            <clipPath id="cut-off-bottom">
+                                <circle cx="110" cy="200" r="95" />
+                            </clipPath>
+                        </defs>
+                        </defs>
+                        <circle cx="110" cy="200" r="101" stroke-width="3" fill="white" />
+                        <g>
+                            <polygon points="88,101 110,200 135,101" transform="rotate(0, 110 100)" style="fill:hsl(0, 100%, 50%);" clip-path="url(#cut-off-bottom)" />
+                            <polygon points="88,101 110,200 135,101" transform="rotate(30, 110 200)" style="fill:hsl(27, 100%, 50%);" clip-path="url(#cut-off-bottom)" />
+                            <polygon points="88,101 110,200 135,101" transform="rotate(60, 110 200)" style="fill:hsl(39, 100%, 50%);" clip-path="url(#cut-off-bottom)" />
+                            <polygon points="88,101 110,200 135,101" transform="rotate(90, 110 200)" style="fill:hsl(49, 100%, 50%);" clip-path="url(#cut-off-bottom)" />
+                            <polygon points="88,101 110,200 135,101" transform="rotate(120, 110 200)" style="fill:hsl(60, 100%, 50%);" clip-path="url(#cut-off-bottom)" />
+                            <polygon points="88,101 110,200 135,101" transform="rotate(150, 110 200)" style="fill:hsl(79, 100%, 50%);" clip-path="url(#cut-off-bottom)" />
+                            <polygon points="88,101 110,200 135,101" transform="rotate(180, 110 200)" style="fill:hsl(120, 100%, 50%);" clip-path="url(#cut-off-bottom)" />
+                            <polygon points="88,101 110,200 135,101" transform="rotate(210, 110 200)" style="fill:hsl(180, 100%, 50%);" clip-path="url(#cut-off-bottom)" />
+                            <polygon points="88,101 110,200 135,101" transform="rotate(240, 110 200)" style="fill:hsl(221, 100%, 50%);" clip-path="url(#cut-off-bottom)" />
+                            <polygon points="88,101 110,200 135,101" transform="rotate(270, 110 200)" style="fill:hsl(253, 100%, 50%);" clip-path="url(#cut-off-bottom)" />
+                            <polygon points="88,101 110,200 135,101" transform="rotate(300, 110 200)" style="fill:hsl(278, 100%, 50%);" clip-path="url(#cut-off-bottom)" />
+                            <polygon points="88,101 110,200 135,101" transform="rotate(330, 110 200)" style="fill:hsl(	326, 100%, 50%);" clip-path="url(#cut-off-bottom)" />
+                            <circle cx="110" cy="200" r="50" stroke-width="3" fill="white" />
+                        </g>
+                        <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(180, 110 200)" stroke-width="4" fill="hsl(120, 100%, 50%)" />
+                        <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(150, 110 200)" stroke-width="4" fill="hsl(79, 100%, 50%)" />
+                        <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(210, 110 200)" stroke-width="4" fill="hsl(180, 100%, 50%)" />
+                    </svg>
+                </section>
+
+                <section>
+                    <h2>Triad</h2>
+                    <svg height="600" width="600" viewBox="0 80 200 300">
+                        <defs>
+                            <clipPath id="cut-off-bottom">
+                                <circle cx="110" cy="200" r="95" />
+                            </clipPath>
+                        </defs>
+                        </defs>
+                        <circle cx="110" cy="200" r="101" stroke-width="3" fill="white" />
+                        <g>
+                            <polygon points="88,101 110,200 135,101" transform="rotate(0, 110 100)" style="fill:hsl(0, 100%, 50%);" clip-path="url(#cut-off-bottom)" />
+                            <polygon points="88,101 110,200 135,101" transform="rotate(30, 110 200)" style="fill:hsl(27, 100%, 50%);" clip-path="url(#cut-off-bottom)" />
+                            <polygon points="88,101 110,200 135,101" transform="rotate(60, 110 200)" style="fill:hsl(39, 100%, 50%);" clip-path="url(#cut-off-bottom)" />
+                            <polygon points="88,101 110,200 135,101" transform="rotate(90, 110 200)" style="fill:hsl(49, 100%, 50%);" clip-path="url(#cut-off-bottom)" />
+                            <polygon points="88,101 110,200 135,101" transform="rotate(120, 110 200)" style="fill:hsl(60, 100%, 50%);" clip-path="url(#cut-off-bottom)" />
+                            <polygon points="88,101 110,200 135,101" transform="rotate(150, 110 200)" style="fill:hsl(79, 100%, 50%);" clip-path="url(#cut-off-bottom)" />
+                            <polygon points="88,101 110,200 135,101" transform="rotate(180, 110 200)" style="fill:hsl(120, 100%, 50%);" clip-path="url(#cut-off-bottom)" />
+                            <polygon points="88,101 110,200 135,101" transform="rotate(210, 110 200)" style="fill:hsl(180, 100%, 50%);" clip-path="url(#cut-off-bottom)" />
+                            <polygon points="88,101 110,200 135,101" transform="rotate(240, 110 200)" style="fill:hsl(221, 100%, 50%);" clip-path="url(#cut-off-bottom)" />
+                            <polygon points="88,101 110,200 135,101" transform="rotate(270, 110 200)" style="fill:hsl(253, 100%, 50%);" clip-path="url(#cut-off-bottom)" />
+                            <polygon points="88,101 110,200 135,101" transform="rotate(300, 110 200)" style="fill:hsl(278, 100%, 50%);" clip-path="url(#cut-off-bottom)" />
+                            <polygon points="88,101 110,200 135,101" transform="rotate(330, 110 200)" style="fill:hsl(	326, 100%, 50%);" clip-path="url(#cut-off-bottom)" />
+                            <circle cx="110" cy="200" r="50" stroke-width="3" fill="white" />
+                        </g>
+                        <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(180, 110 200)" stroke-width="4" fill="hsl(120, 100%, 50%)" />
+                        <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(60, 110 200)" stroke-width="4" fill="hsl(39, 100%, 50%)" />
+                        <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(300, 110 200)" stroke-width="4" fill="hsl(278, 100%, 50%)" />
+                    </svg>
+                </section>
+
+
+
+                <section>
+                    <h2>Example</h2>
+
+                    <svg height="600" width="600" viewBox="0 80 10 700" style="width: 100%;position:absolute;">
+                        <g>
+                            <circle cx="110" cy="200" r="105" stroke-width="3" fill="white" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(0, 110 100)" style="fill:hsl(0, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(10, 110 200)" style="fill:hsl(12, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(20, 110 200)" style="fill:hsl(20, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(30, 110 200)" style="fill:hsl(27, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(40, 110 200)" style="fill:hsl(32, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(50, 110 200)" style="fill:hsl(36, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(60, 110 200)" style="fill:hsl(39, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(70, 110 200)" style="fill:hsl(43, 100%, 50%);" />
+                            <polygon points=qq"101,101 110,200 120,101" transform="rotate(80, 110 200)" style="fill:hsl(46, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(90, 110 200)" style="fill:hsl(49, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(100, 110 200)" style="fill:hsl(53, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(110, 110 200)" style="fill:hsl(56, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(120, 110 200)" style="fill:hsl(60, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(130, 110 200)" style="fill:hsl(67, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(140, 110 200)" style="fill:hsl(73, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(150, 110 200)" style="fill:hsl(79, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(160, 110 200)" style="fill:hsl(87, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(170, 110 200)" style="fill:hsl(99, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(180, 110 200)" style="fill:hsl(120, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(190, 110 200)" style="fill:hsl(146, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(200, 110 200)" style="fill:hsl(162, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(210, 110 200)" style="fill:hsl(180, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(220, 110 200)" style="fill:hsl(200, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(230, 110 200)" style="fill:hsl(211, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(240, 110 200)" style="fill:hsl(221, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(250, 110 200)" style="fill:hsl(233, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(260, 110 200)" style="fill:hsl(245, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(270, 110 200)" style="fill:hsl(253, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(280, 110 200)" style="fill:hsl(262, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(290, 110 200)" style="fill:hsl(269, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(300, 110 200)" style="fill:hsl(278, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(310, 110 200)" style="fill:hsl(291, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(320, 110 200)" style="fill:hsl(311, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(330, 110 200)" style="fill:hsl(	326, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(340, 110 200)" style="fill:hsl(336, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(350, 110 200)" style="fill:hsl(347, 100%, 50%);" />
+                            <circle cx="110" cy="200" r="50" stroke-width="3" fill="white" />
+                        </g>
+
+                        <circle cx="110" cy="120" r="10" stroke="white" transform="rotate(210, 110 200)" stroke-width="3" fill="#75c9ca" />
+                        <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(210, 110 200)" stroke-width="3" fill="#2a2d2d" />
+                        <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(200, 110 200)" stroke-width="3" fill="#e7eceb" />
+                        <img src="img/1.jpg" style="height: 500px">
+
+                    </svg>
+                </section>
+
+                <section>
+                    <h2>Example</h2>
+
+                    <svg height="600" width="600" viewBox="0 80 10 700" style="width: 100%;position:absolute;">
+                        <g>
+                            <circle cx="110" cy="200" r="105" stroke-width="3" fill="white" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(0, 110 100)" style="fill:hsl(0, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(10, 110 200)" style="fill:hsl(12, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(20, 110 200)" style="fill:hsl(20, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(30, 110 200)" style="fill:hsl(27, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(40, 110 200)" style="fill:hsl(32, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(50, 110 200)" style="fill:hsl(36, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(60, 110 200)" style="fill:hsl(39, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(70, 110 200)" style="fill:hsl(43, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(80, 110 200)" style="fill:hsl(46, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(90, 110 200)" style="fill:hsl(49, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(100, 110 200)" style="fill:hsl(53, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(110, 110 200)" style="fill:hsl(56, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(120, 110 200)" style="fill:hsl(60, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(130, 110 200)" style="fill:hsl(67, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(140, 110 200)" style="fill:hsl(73, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(150, 110 200)" style="fill:hsl(79, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(160, 110 200)" style="fill:hsl(87, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(170, 110 200)" style="fill:hsl(99, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(180, 110 200)" style="fill:hsl(120, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(190, 110 200)" style="fill:hsl(146, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(200, 110 200)" style="fill:hsl(162, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(210, 110 200)" style="fill:hsl(180, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(220, 110 200)" style="fill:hsl(200, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(230, 110 200)" style="fill:hsl(211, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(240, 110 200)" style="fill:hsl(221, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(250, 110 200)" style="fill:hsl(233, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(260, 110 200)" style="fill:hsl(245, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(270, 110 200)" style="fill:hsl(253, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(280, 110 200)" style="fill:hsl(262, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(290, 110 200)" style="fill:hsl(269, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(300, 110 200)" style="fill:hsl(278, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(310, 110 200)" style="fill:hsl(291, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(320, 110 200)" style="fill:hsl(311, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(330, 110 200)" style="fill:hsl(	326, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(340, 110 200)" style="fill:hsl(336, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(350, 110 200)" style="fill:hsl(347, 100%, 50%);" />
+                            <circle cx="110" cy="200" r="50" stroke-width="3" fill="white" />
+                        </g>
+
+                        <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(357, 110 200)" stroke-width="3" fill="#de1e2c" />
+                        <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(210, 110 200)" stroke-width="3" fill="#eef0f0" />
+                        <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(220, 110 200)" stroke-width="3" fill="#1883c4" />
+                        <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(178, 110 200)" stroke-width="3" fill="#4a8843" />
+
+                        <img src="img/2.jpg" style="height: 500px">
+
+                    </svg>
+                </section>
+
+                <section>
+                    <h2>Example</h2>
+
+                    <svg height="600" width="600" viewBox="0 80 10 700" style="width: 100%;position:absolute;">
+                       <g>
+                            <circle cx="110" cy="200" r="105" stroke-width="3" fill="white" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(0, 110 100)" style="fill:hsl(0, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(10, 110 200)" style="fill:hsl(12, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(20, 110 200)" style="fill:hsl(20, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(30, 110 200)" style="fill:hsl(27, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(40, 110 200)" style="fill:hsl(32, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(50, 110 200)" style="fill:hsl(36, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(60, 110 200)" style="fill:hsl(39, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(70, 110 200)" style="fill:hsl(43, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(80, 110 200)" style="fill:hsl(46, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(90, 110 200)" style="fill:hsl(49, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(100, 110 200)" style="fill:hsl(53, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(110, 110 200)" style="fill:hsl(56, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(120, 110 200)" style="fill:hsl(60, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(130, 110 200)" style="fill:hsl(67, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(140, 110 200)" style="fill:hsl(73, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(150, 110 200)" style="fill:hsl(79, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(160, 110 200)" style="fill:hsl(87, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(170, 110 200)" style="fill:hsl(99, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(180, 110 200)" style="fill:hsl(120, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(190, 110 200)" style="fill:hsl(146, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(200, 110 200)" style="fill:hsl(162, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(210, 110 200)" style="fill:hsl(180, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(220, 110 200)" style="fill:hsl(200, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(230, 110 200)" style="fill:hsl(211, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(240, 110 200)" style="fill:hsl(221, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(250, 110 200)" style="fill:hsl(233, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(260, 110 200)" style="fill:hsl(245, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(270, 110 200)" style="fill:hsl(253, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(280, 110 200)" style="fill:hsl(262, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(290, 110 200)" style="fill:hsl(269, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(300, 110 200)" style="fill:hsl(278, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(310, 110 200)" style="fill:hsl(291, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(320, 110 200)" style="fill:hsl(311, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(330, 110 200)" style="fill:hsl(326, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(340, 110 200)" style="fill:hsl(336, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(350, 110 200)" style="fill:hsl(347, 100%, 50%);" />
+                            <circle cx="110" cy="200" r="50" stroke-width="3" fill="white" />
+                        </g>
+
+                        <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(110, 110 200)" stroke-width="3" fill="#dfdca3" />
+                        <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(60, 110 200)" stroke-width="3" fill="#e69712" />
+                        <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(220, 110 200)" stroke-width="3" fill="#1883c4" />
+                        <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(358, 110 200)" stroke-width="3" fill="#dc373c" />
+
+                        <img src="img/3.jpg" style="height: 500px">
+
+                    </svg>
+                </section>
+
+                <section>
+                    <h2>Example</h2>
+
+                    <svg height="600" width="600" viewBox="0 80 10 700" style="width: 100%;position:absolute;">
+                      <g>
+                            <circle cx="110" cy="200" r="105" stroke-width="3" fill="white" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(0, 110 100)" style="fill:hsl(0, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(10, 110 200)" style="fill:hsl(12, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(20, 110 200)" style="fill:hsl(20, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(30, 110 200)" style="fill:hsl(27, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(40, 110 200)" style="fill:hsl(32, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(50, 110 200)" style="fill:hsl(36, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(60, 110 200)" style="fill:hsl(39, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(70, 110 200)" style="fill:hsl(43, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(80, 110 200)" style="fill:hsl(46, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(90, 110 200)" style="fill:hsl(49, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(100, 110 200)" style="fill:hsl(53, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(110, 110 200)" style="fill:hsl(56, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(120, 110 200)" style="fill:hsl(60, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(130, 110 200)" style="fill:hsl(67, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(140, 110 200)" style="fill:hsl(73, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(150, 110 200)" style="fill:hsl(79, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(160, 110 200)" style="fill:hsl(87, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(170, 110 200)" style="fill:hsl(99, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(180, 110 200)" style="fill:hsl(120, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(190, 110 200)" style="fill:hsl(146, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(200, 110 200)" style="fill:hsl(162, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(210, 110 200)" style="fill:hsl(180, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(220, 110 200)" style="fill:hsl(200, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(230, 110 200)" style="fill:hsl(211, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(240, 110 200)" style="fill:hsl(221, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(250, 110 200)" style="fill:hsl(233, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(260, 110 200)" style="fill:hsl(245, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(270, 110 200)" style="fill:hsl(253, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(280, 110 200)" style="fill:hsl(262, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(290, 110 200)" style="fill:hsl(269, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(300, 110 200)" style="fill:hsl(278, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(310, 110 200)" style="fill:hsl(291, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(320, 110 200)" style="fill:hsl(311, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(330, 110 200)" style="fill:hsl(	326, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(340, 110 200)" style="fill:hsl(336, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(350, 110 200)" style="fill:hsl(347, 100%, 50%);" />
+                            <circle cx="110" cy="200" r="50" stroke-width="3" fill="white" />
+                        </g>
+
+                        <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(220, 110 200)" stroke-width="3" fill="#cbcfd2" />
+                        <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(230, 110 200)" stroke-width="3" fill="#a5abb6" />
+                        <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(310, 110 200)" stroke-width="3" fill="#949294" />
+
+                        <img src="img/4.png" style="height: 500px">
+
+                    </svg>
+                </section>
+
+
+                <section>
+                    <h2>Example</h2>
+
+                    <svg height="600" width="600" viewBox="0 80 10 700" style="width: 100%;position:absolute;">
+                      <g>
+                            <circle cx="110" cy="200" r="105" stroke-width="3" fill="white" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(0, 110 100)" style="fill:hsl(0, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(10, 110 200)" style="fill:hsl(12, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(20, 110 200)" style="fill:hsl(20, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(30, 110 200)" style="fill:hsl(27, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(40, 110 200)" style="fill:hsl(32, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(50, 110 200)" style="fill:hsl(36, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(60, 110 200)" style="fill:hsl(39, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(70, 110 200)" style="fill:hsl(43, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(80, 110 200)" style="fill:hsl(46, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(90, 110 200)" style="fill:hsl(49, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(100, 110 200)" style="fill:hsl(53, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(110, 110 200)" style="fill:hsl(56, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(120, 110 200)" style="fill:hsl(60, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(130, 110 200)" style="fill:hsl(67, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(140, 110 200)" style="fill:hsl(73, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(150, 110 200)" style="fill:hsl(79, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(160, 110 200)" style="fill:hsl(87, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(170, 110 200)" style="fill:hsl(99, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(180, 110 200)" style="fill:hsl(120, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(190, 110 200)" style="fill:hsl(146, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(200, 110 200)" style="fill:hsl(162, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(210, 110 200)" style="fill:hsl(180, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(220, 110 200)" style="fill:hsl(200, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(230, 110 200)" style="fill:hsl(211, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(240, 110 200)" style="fill:hsl(221, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(250, 110 200)" style="fill:hsl(233, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(260, 110 200)" style="fill:hsl(245, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(270, 110 200)" style="fill:hsl(253, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(280, 110 200)" style="fill:hsl(262, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(290, 110 200)" style="fill:hsl(269, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(300, 110 200)" style="fill:hsl(278, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(310, 110 200)" style="fill:hsl(291, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(320, 110 200)" style="fill:hsl(311, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(330, 110 200)" style="fill:hsl(	326, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(340, 110 200)" style="fill:hsl(336, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(350, 110 200)" style="fill:hsl(347, 100%, 50%);" />
+                            <circle cx="110" cy="200" r="50" stroke-width="3" fill="white" />
+                        </g>
+
+                        <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(10, 110 200)" stroke-width="3" fill="#1e0c08" />
+                        <circle cx="110" cy="120" r="10" stroke="white" transform="rotate(80, 110 200)" stroke-width="3" fill="#9b8434" />
+                        <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(20, 110 200)" stroke-width="3" fill="#502a12" />
+                        <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(70, 110 200)" stroke-width="3" fill="#382f17" />
+                        <circle cx="110" cy="140" r="10" stroke="white" transform="rotate(70, 110 200)" stroke-width="3" fill="#f5c341" />
+
+                        <img src="img/5.jpg" style="height: 500px">
+
+                    </svg>
+                </section>
+
+                <section>
+                    <h2>Example</h2>
+
+                    <svg height="600" width="600" viewBox="0 80 10 700" style="width: 100%;position:absolute;">
+                       <g>
+                            <circle cx="110" cy="200" r="105" stroke-width="3" fill="white" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(0, 110 100)" style="fill:hsl(0, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(10, 110 200)" style="fill:hsl(12, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(20, 110 200)" style="fill:hsl(20, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(30, 110 200)" style="fill:hsl(27, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(40, 110 200)" style="fill:hsl(32, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(50, 110 200)" style="fill:hsl(36, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(60, 110 200)" style="fill:hsl(39, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(70, 110 200)" style="fill:hsl(43, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(80, 110 200)" style="fill:hsl(46, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(90, 110 200)" style="fill:hsl(49, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(100, 110 200)" style="fill:hsl(53, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(110, 110 200)" style="fill:hsl(56, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(120, 110 200)" style="fill:hsl(60, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(130, 110 200)" style="fill:hsl(67, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(140, 110 200)" style="fill:hsl(73, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(150, 110 200)" style="fill:hsl(79, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(160, 110 200)" style="fill:hsl(87, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(170, 110 200)" style="fill:hsl(99, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(180, 110 200)" style="fill:hsl(120, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(190, 110 200)" style="fill:hsl(146, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(200, 110 200)" style="fill:hsl(162, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(210, 110 200)" style="fill:hsl(180, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(220, 110 200)" style="fill:hsl(200, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(230, 110 200)" style="fill:hsl(211, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(240, 110 200)" style="fill:hsl(221, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(250, 110 200)" style="fill:hsl(233, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(260, 110 200)" style="fill:hsl(245, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(270, 110 200)" style="fill:hsl(253, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(280, 110 200)" style="fill:hsl(262, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(290, 110 200)" style="fill:hsl(269, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(300, 110 200)" style="fill:hsl(278, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(310, 110 200)" style="fill:hsl(291, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(320, 110 200)" style="fill:hsl(311, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(330, 110 200)" style="fill:hsl(	326, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(340, 110 200)" style="fill:hsl(336, 100%, 50%);" />
+                            <polygon points="101,101 110,200 120,101" transform="rotate(350, 110 200)" style="fill:hsl(347, 100%, 50%);" />
+                            <circle cx="110" cy="200" r="50" stroke-width="3" fill="white" />
+                        </g>
+
+                        <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(160, 110 200)" stroke-width="3" fill="#395d0a" />
+                        <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(150, 110 200)" stroke-width="3" fill="#6a9a07" />
+                        <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(240, 110 200)" stroke-width="3" fill="#538bee" />
+                        <circle cx="110" cy="100" r="10" stroke="white" transform="rotate(230, 110 200)" stroke-width="3" fill="#7eaff0" />
+
+                        <img src="img/6.png" style="height: 500px">
+
+                    </svg>
+                </section>
+
+            </section>
+
+
+            <section>
+                <section>
+                    <h1>Layout</h1>
+                </section>
+
+
+
+
+                <section>
+                    <h2>Golden cut</h2>
+
+                    <img src="img/cut.svg" style="width:100%">
+
+                </section>
+
+                <section>
+                    <h1 style="font-size:500px;margin:0;">1.618</h1>
+                </section>
+
+                <section>
+                    <h2>Golden rectangle</h2>
+                    <svg height="600" width="600" viewBox="-1 -1 170 151">
+                        <rect width="161" height="100" style="fill:lightgray;stroke-width:1;stroke:#444444" />
+                        <rect width="100" height="100" style="fill:white;stroke-width:1;stroke:#444444" />
+                        <text x="105" y="120" fill="black" font-size="20">0.618</text>
+                        <text x="40" y="120" fill="black" font-size="20">1</text>
+                    </svg>
+                </section>
+
+                <section>
+                    <img src="img/tower.svg" style="height: 500px">
+                </section>
+
+                <section>
+                    <h2>Layouts</h2>
+                    <svg height="600" width="600" viewBox="-1 -20 170 151">
+                        <rect width="161" height="100" style="fill:lightgray;stroke-width:1;stroke:#444444" />
+                        <rect width="100" height="100" style="fill:white;stroke-width:1;stroke:#444444" />
+                        <text x="100" y="120" fill="black" font-size="20">367px</text>
+                        <text x="20" y="120" fill="black" font-size="20">593px</text>
+                        <text x="45" y="-8" fill="black" font-size="20">960px</text>
+                    </svg>
+                </section>
+
+
+                <section>
+                    <h2>Fibonacci spiral </h2>
+                    <img src="img/spiral.svg" style="height: 500px">
+                </section>
+
+                <section>
+                    <img style="float:left;height: 350px" src="img/nautilus.jpg">
+                    <img src="img/hurrican.jpg" style="height: 350px">
+                </section>
+
+
+                <section>
+                    <h2>Fibonacci numbers</h2>
+                    <img src="img/FibonacciBlocks.svg" alt="">
+                    <div>1,2,3,5,8</div>
+                </section>
+
+
+                <section>
+                    <img src="img/layout1.svg" style="width:100%">
+                </section>
+
+                <section>
+                    <img src="img/layout2.svg" style="width:100%">
+                </section>
+
+                <section>
+                    <img src="img/layout3.svg" style="width:100%">
+                </section>
+
+                <section>
+                    <img src="img/layout4.svg" style="width:100%">
+                </section>
+
+                <section>
+                    <img src="img/layout-ex1.png" alt="" style="width:100%">
+                </section>
+
+                <section>
+                    <img src="img/layout-ex2.png" alt="" style="width:100%">
+                </section>
+
+
+                <section>
+                    <h2>Paper Formats (1.414)</h2>
+                    <svg height="600" width="600" viewBox="-1 -1 170 151">
+                        <rect width="100" height="141" style="fill:lightgray;stroke-width:1;stroke:#444444" />
+                        <rect width="100" height="100" style="fill:white;stroke-width:1;stroke:#444444" />
+                    </svg>
+                </section>
+
+            </section>
+
+            <section>
+                <section>
+                    <h1>Icons</h1>
+                </section>
+
+                <section>
+
+                    <h2>Mental mapping</h2> find associtation
+                    <br>
+                    <h2>Real things</h2>
+                    <img style="height:4em" src="img/icons/car.svg">
+                    <img style="height:4em" src="img/icons/home.svg">
+                    <img style="height:3em" src="img/icons/key.svg">
+
+                </section>
+
+                <section>
+                    <h2>Metaphorical meaning</h2>
+                    <img style="height:4em" src="img/icons/star.svg">
+                    <img style="height:4em" src="img/icons/wheel.svg">
+                    <img style="height:4em" src="img/icons/bulb.svg">
+                </section>
+
+                <section>
+                    <h2>Agreed meaning</h2>
+                    <img style="height:4em" src="img/icons/question.svg">
+                    <img style="height:4em" src="img/icons/thums.svg">
+                    <img style="height:4em" src="img/icons/place.svg">
+                    <img style="height:4em" src="img/icons/rss.svg">
+                </section>
+
+                <section>
+                    <img src="img/applemail.jpg">
+                    <br>
+
+                    <img src="img/mailbox1.jpg" style="height:150px;float:left;">
+                    <img src="img/mailbox2.jpg" style="height:150px;float:left;">
+                    <img src="img/mailbox3.jpg" style="height:150px;float:left;">
+                    <img src="img/mailbox4.jpg" style="height:150px;float:left;">
+                    <img src="img/mailbox5.jpg" style="height:150px;float:left;">
+
+                </section>
+
+
+                <section>
+                    <h2>Arrow hell</h2>
+                    <img style="height:4em" src="img/icons/arr-left.svg">
+                    <img style="height:4em" src="img/icons/arr-right.svg">
+                    <img style="height:4em" src="img/icons/arr-up.svg">
+                    <img style="height:4em" src="img/icons/arr-down.svg">
+                    <img style="height:4em" src="img/icons/reply.svg">
+
+                </section>
+
+                <section>
+                    <h2>Story of "Unsubscribe"</h2>
+                    <img src="img/unsubscribe-design.svg" alt="">
+                </section>
+
+                <section>
+                    <h2>Unsubscribe</h2>
+                    <img src="img/icons/eject.svg" style="height:5em" alt="">
+                </section>
+
+
+                <section>
+                    <h2>Context dependency</h2>
+                    <button><img src="img/icons/deletedoc.svg" alt="">
+                    </button>
+                    <br>
+                    <button><img src="img/icons/delete.svg" alt="">Document</button>
+                    <br>
+                    <button><img src="img/icons/doc.svg" alt="">Delete</button>
+                    <br>
+                    <button><img src="img/icons/delete.svg" alt="">Delete</button>
+                    <br>
+                </section>
+
+            </section>
+
+        </div>
 
     </div>
 
-
-    <script src="bower_components/jquery/jquery.js"></script>
-    <script src="bower_components/impress.js/js/impress.js"></script>
-
-
-
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
 
     <script>
-    // First, get sorted slide list
-    impress().init();
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
 
-    /* $.getJSON('steps/list.json', function(data) {
-       // Append ordered slides
-       appendSlides(data);
-       impress().init();
-       impressConsole().init();
-     });*/
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function() {
+                return !document.body.classList;
+            }
+        }, {
+            src: 'plugin/markdown/marked.js',
+            condition: function() {
+                return !!document.querySelector('[data-markdown]');
+            }
+        }, {
+            src: 'plugin/markdown/markdown.js',
+            condition: function() {
+                return !!document.querySelector('[data-markdown]');
+            }
+        }, {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            callback: function() {
+                hljs.initHighlightingOnLoad();
+            }
+        }, {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true,
+            condition: function() {
+                return !!document.body.classList;
+            }
+        }, {
+            src: 'plugin/notes/notes.js',
+            async: true,
+            condition: function() {
+                return !!document.body.classList;
+            }
+        }]
+    });
     </script>
-
 
 </body>
 

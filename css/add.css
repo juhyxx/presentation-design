@@ -1,0 +1,10 @@
+.color {
+	display:inline-block;
+	height:1em;
+	width:1em;
+}
+img {
+	border:0 !important;
+	background-color: transparent !important;
+	box-shadow: none !important;
+}
